@@ -1,0 +1,1026 @@
+[  269.767609] test_bpf: #0 TAX jited:1 774 406 407 PASS
+[  269.783967] test_bpf: #1 TXA jited:1 474 271 264 PASS
+[  269.792740] test_bpf: #2 ADD_SUB_MUL_K jited:1 327 PASS
+[  269.794228] test_bpf: #3 DIV_MOD_KX jited:1 398 PASS
+[  269.799652] test_bpf: #4 AND_OR_LSH_K jited:1 346 264 PASS
+[  269.804664] test_bpf: #5 LD_IMM_0 jited:1 318 PASS
+[  269.806248] test_bpf: #6 LD_IND jited:1 1034 615 620 PASS
+[  269.811638] test_bpf: #7 LD_ABS jited:1 872 607 602 PASS
+[  269.819294] test_bpf: #8 LD_ABS_LL jited:1 945 753 PASS
+[  269.822297] test_bpf: #9 LD_IND_LL jited:1 776 528 538 PASS
+[  269.827809] test_bpf: #10 LD_ABS_NET jited:1 1009 754 PASS
+[  269.835672] test_bpf: #11 LD_IND_NET jited:1 617 500 504 PASS
+[  269.838332] test_bpf: #12 LD_PKTTYPE jited:1 527 282 PASS
+[  269.843965] test_bpf: #13 LD_MARK jited:1 358 282 PASS
+[  269.848636] test_bpf: #14 LD_RXHASH jited:1 319 282 PASS
+[  269.850229] test_bpf: #15 LD_QUEUE jited:1 323 425 PASS
+[  269.852739] test_bpf: #16 LD_PROTOCOL jited:1 836 524 PASS
+[  269.863928] test_bpf: #17 LD_VLAN_TAG jited:1 361 300 PASS
+[  269.868635] test_bpf: #18 LD_VLAN_TAG_PRESENT jited:1 339 283 PASS
+[  269.870333] test_bpf: #19 LD_IFINDEX jited:1 515 274 PASS
+[  269.876050] test_bpf: #20 LD_HATYPE jited:1 528 278 PASS
+[  269.880432] test_bpf: #21 LD_CPU jited:1 571 458 PASS
+[  269.882407] test_bpf: #22 LD_NLATTR jited:1 685 605 PASS
+[  269.887934] test_bpf: #23 LD_NLATTR_NEST jited:1 1511 2411 PASS
+[  269.896094] test_bpf: #24 LD_PAYLOAD_OFF jited:1 5048 4275 PASS
+[  269.907810] test_bpf: #25 LD_ANC_XOR jited:1 362 270 PASS
+[  269.914584] test_bpf: #26 SPILL_FILL jited:1 352 295 300 PASS
+[  269.917451] test_bpf: #27 JEQ jited:1 729 618 441 PASS
+[  269.923871] test_bpf: #28 JGT jited:1 986 439 433 PASS
+[  269.929558] test_bpf: #29 JGE (jt 0), test 1 jited:1 719 589 414 PASS
+[  269.935973] test_bpf: #30 JGE (jt 0), test 2 jited:1 716 410 433 PASS
+[  269.941300] test_bpf: #31 JGE jited:1 530 442 622 PASS
+[  269.947580] test_bpf: #32 JSET jited:1 595 457 496 PASS
+[  269.955794] test_bpf: #33 tcpdump port 22 jited:1 768 1213 1178 PASS
+[  269.964527] test_bpf: #34 tcpdump complex jited:1 691 1355 1660 PASS
+[  269.971817] test_bpf: #35 RET_A jited:1 341 264 PASS
+[  269.978226] test_bpf: #36 INT: ADD trivial jited:1 307 PASS
+[  269.979926] test_bpf: #37 INT: MUL_X jited:1 307 PASS
+[  269.981194] test_bpf: #38 INT: MUL_X2 jited:1 332 PASS
+[  269.982536] test_bpf: #39 INT: MUL32_X jited:1 493 PASS
+[  269.984579] test_bpf: #40 INT: ADD 64-bit jited:1 687 PASS
+[  269.992302] test_bpf: #41 INT: ADD 32-bit jited:1 558 PASS
+[  269.994315] test_bpf: #42 INT: SUB jited:1 580 PASS
+[  269.999730] test_bpf: #43 INT: XOR jited:1 756 PASS
+[  270.004266] test_bpf: #44 INT: MUL jited:1 403 PASS
+[  270.006197] test_bpf: #45 MOV REG64 jited:1 351 PASS
+[  270.008573] test_bpf: #46 MOV REG32 jited:1 545 PASS
+[  270.015926] test_bpf: #47 LD IMM64 jited:1 346 PASS
+[  270.017198] test_bpf: #48 INT: ALU MIX jited:1 354 PASS
+[  270.018609] test_bpf: #49 INT: shifts by register jited:1 420 PASS
+[  270.023849] test_bpf: #50 check: missing ret PASS
+[  270.024676] test_bpf: #51 check: div_k_0 PASS
+[  270.025234] test_bpf: #52 check: unknown insn PASS
+[  270.025746] test_bpf: #53 check: out of range spill/fill PASS
+[  270.026297] test_bpf: #54 JUMPS + HOLES jited:1 514 PASS
+[  270.035832] test_bpf: #55 check: RET X PASS
+[  270.036401] test_bpf: #56 check: LDX + RET X PASS
+[  270.036982] test_bpf: #57 M[]: alt STX + LDX jited:1 545 PASS
+[  270.043862] test_bpf: #58 M[]: full STX + full LDX jited:1 603 PASS
+[  270.049977] test_bpf: #59 check: SKF_AD_MAX PASS
+[  270.050522] test_bpf: #60 LD [SKF_AD_OFF-1] jited:1 807 PASS
+[  270.055672] test_bpf: #61 load 64-bit immediate jited:1 367 PASS
+[  270.063897] test_bpf: #62 ALU_MOV_X: dst = 2 jited:1 527 PASS
+[  270.068156] test_bpf: #63 ALU_MOV_X: dst = 4294967295 jited:1 309 PASS
+[  270.069365] test_bpf: #64 ALU64_MOV_X: dst = 2 jited:1 307 PASS
+[  270.070513] test_bpf: #65 ALU64_MOV_X: dst = 4294967295 jited:1 302 PASS
+[  270.072992] test_bpf: #66 ALU_MOV_K: dst = 2 jited:1 329 PASS
+[  270.079681] test_bpf: #67 ALU_MOV_K: dst = 4294967295 jited:1 305 PASS
+[  270.080932] test_bpf: #68 ALU_MOV_K: 0x0000ffffffff0000 = 0x00000000ffffffff jited:1 332 PASS
+[  270.082270] test_bpf: #69 ALU_MOV_K: small negative jited:1 307 PASS
+[  270.083816] test_bpf: #70 ALU_MOV_K: small negative zero extension jited:1 347 PASS
+[  270.085326] test_bpf: #71 ALU_MOV_K: large negative jited:1 306 PASS
+[  270.086534] test_bpf: #72 ALU_MOV_K: large negative zero extension jited:1 304 PASS
+[  270.091573] test_bpf: #73 ALU64_MOV_K: dst = 2 jited:1 315 PASS
+[  270.099126] test_bpf: #74 ALU64_MOV_K: dst = 2147483647 jited:1 313 PASS
+[  270.103825] test_bpf: #75 ALU64_OR_K: dst = 0x0 jited:1 352 PASS
+[  270.110604] test_bpf: #76 ALU64_MOV_K: dst = -1 jited:1 485 PASS
+[  270.112039] test_bpf: #77 ALU64_MOV_K: small negative jited:1 299 PASS
+[  270.113217] test_bpf: #78 ALU64_MOV_K: small negative sign extension jited:1 307 PASS
+[  270.114471] test_bpf: #79 ALU64_MOV_K: large negative jited:1 303 PASS
+[  270.119846] test_bpf: #80 ALU64_MOV_K: large negative sign extension jited:1 518 PASS
+[  270.124201] test_bpf: #81 ALU_ADD_X: 1 + 2 = 3 jited:1 317 PASS
+[  270.125438] test_bpf: #82 ALU_ADD_X: 1 + 4294967294 = 4294967295 jited:1 311 PASS
+[  270.126655] test_bpf: #83 ALU_ADD_X: 2 + 4294967294 = 0 jited:1 489 PASS
+[  270.131991] test_bpf: #84 ALU64_ADD_X: 1 + 2 = 3 jited:1 545 PASS
+[  270.136117] test_bpf: #85 ALU64_ADD_X: 1 + 4294967294 = 4294967295 jited:1 310 PASS
+[  270.137369] test_bpf: #86 ALU64_ADD_X: 2 + 4294967294 = 4294967296 jited:1 323 PASS
+[  270.138651] test_bpf: #87 ALU_ADD_K: 1 + 2 = 3 jited:1 474 PASS
+[  270.143881] test_bpf: #88 ALU_ADD_K: 3 + 0 = 3 jited:1 523 PASS
+[  270.148097] test_bpf: #89 ALU_ADD_K: 1 + 4294967294 = 4294967295 jited:1 306 PASS
+[  270.149346] test_bpf: #90 ALU_ADD_K: 4294967294 + 2 = 0 jited:1 327 PASS
+[  270.150564] test_bpf: #91 ALU_ADD_K: 0 + (-1) = 0x00000000ffffffff jited:1 310 PASS
+[  270.155831] test_bpf: #92 ALU_ADD_K: 0 + 0xffff = 0xffff jited:1 335 PASS
+[  270.159927] test_bpf: #93 ALU_ADD_K: 0 + 0x7fffffff = 0x7fffffff jited:1 321 PASS
+[  270.161222] test_bpf: #94 ALU_ADD_K: 0 + 0x80000000 = 0x80000000 jited:1 319 PASS
+[  270.162491] test_bpf: #95 ALU_ADD_K: 0 + 0x80008000 = 0x80008000 jited:1 314 PASS
+[  270.164758] test_bpf: #96 ALU64_ADD_K: 1 + 2 = 3 jited:1 473 PASS
+[  270.172249] test_bpf: #97 ALU64_ADD_K: 3 + 0 = 3 jited:1 307 PASS
+[  270.173469] test_bpf: #98 ALU64_ADD_K: 1 + 2147483646 = 2147483647 jited:1 311 PASS
+[  270.174739] test_bpf: #99 ALU64_ADD_K: 4294967294 + 2 = 4294967296 jited:1 494 PASS
+[  270.179888] test_bpf: #100 ALU64_ADD_K: 2147483646 + -2147483647 = -1 jited:1 323 PASS
+[  270.184051] test_bpf: #101 ALU64_ADD_K: 1 + 0 = 1 jited:1 315 PASS
+[  270.185267] test_bpf: #102 ALU64_ADD_K: 0 + (-1) = 0xffffffffffffffff jited:1 318 PASS
+[  270.186544] test_bpf: #103 ALU64_ADD_K: 0 + 0xffff = 0xffff jited:1 495 PASS
+[  270.191831] test_bpf: #104 ALU64_ADD_K: 0 + 0x7fffffff = 0x7fffffff jited:1 341 PASS
+[  270.195969] test_bpf: #105 ALU64_ADD_K: 0 + 0x80000000 = 0xffffffff80000000 jited:1 321 PASS
+[  270.197273] test_bpf: #106 ALU_ADD_K: 0 + 0x80008000 = 0xffffffff80008000 jited:1 318 PASS
+[  270.198569] test_bpf: #107 ALU_SUB_X: 3 - 1 = 2 jited:1 280 PASS
+[  270.200786] test_bpf: #108 ALU_SUB_X: 4294967295 - 4294967294 = 1 jited:1 499 PASS
+[  270.208297] test_bpf: #109 ALU64_SUB_X: 3 - 1 = 2 jited:1 310 PASS
+[  270.209516] test_bpf: #110 ALU64_SUB_X: 4294967295 - 4294967294 = 1 jited:1 303 PASS
+[  270.210764] test_bpf: #111 ALU_SUB_K: 3 - 1 = 2 jited:1 430 PASS
+[  270.215927] test_bpf: #112 ALU_SUB_K: 3 - 0 = 3 jited:1 528 PASS
+[  270.220016] test_bpf: #113 ALU_SUB_K: 4294967295 - 4294967294 = 1 jited:1 304 PASS
+[  270.221263] test_bpf: #114 ALU64_SUB_K: 3 - 1 = 2 jited:1 307 PASS
+[  270.222437] test_bpf: #115 ALU64_SUB_K: 3 - 0 = 3 jited:1 305 PASS
+[  270.227350] test_bpf: #116 ALU64_SUB_K: 4294967294 - 4294967295 = -1 jited:1 326 PASS
+[  270.232211] test_bpf: #117 ALU64_ADD_K: 2147483646 - 2147483647 = -1 jited:1 338 PASS
+[  270.238849] test_bpf: #118 ALU_MUL_X: 2 * 3 = 6 jited:1 481 PASS
+[  270.240181] test_bpf: #119 ALU_MUL_X: 2 * 0x7FFFFFF8 = 0xFFFFFFF0 jited:1 312 PASS
+[  270.241437] test_bpf: #120 ALU_MUL_X: -1 * -1 = 1 jited:1 310 PASS
+[  270.242613] test_bpf: #121 ALU64_MUL_X: 2 * 3 = 6 jited:1 311 PASS
+[  270.244930] test_bpf: #122 ALU64_MUL_X: 1 * 2147483647 = 2147483647 jited:1 527 PASS
+[  270.252248] test_bpf: #123 ALU64_MUL_X: 64x64 multiply, low word jited:1 325 PASS
+[  270.253538] test_bpf: #124 ALU64_MUL_X: 64x64 multiply, high word jited:1 309 PASS
+[  270.254803] test_bpf: #125 ALU_MUL_K: 2 * 3 = 6 jited:1 504 PASS
+[  270.259957] test_bpf: #126 ALU_MUL_K: 3 * 1 = 3 jited:1 482 PASS
+[  270.263984] test_bpf: #127 ALU_MUL_K: 2 * 0x7FFFFFF8 = 0xFFFFFFF0 jited:1 304 PASS
+[  270.265239] test_bpf: #128 ALU_MUL_K: 1 * (-1) = 0x00000000ffffffff jited:1 324 PASS
+[  270.266517] test_bpf: #129 ALU64_MUL_K: 2 * 3 = 6 jited:1 299 PASS
+[  270.271654] test_bpf: #130 ALU64_MUL_K: 3 * 1 = 3 jited:1 318 PASS
+[  270.276213] test_bpf: #131 ALU64_MUL_K: 1 * 2147483647 = 2147483647 jited:1 350 PASS
+[  270.282736] test_bpf: #132 ALU64_MUL_K: 1 * -2147483647 = -2147483647 jited:1 454 PASS
+[  270.284310] test_bpf: #133 ALU64_MUL_K: 1 * (-1) = 0xffffffffffffffff jited:1 324 PASS
+[  270.285737] test_bpf: #134 ALU64_MUL_K: 64x32 multiply, low word jited:1 303 PASS
+[  270.286975] test_bpf: #135 ALU64_MUL_K: 64x32 multiply, high word jited:1 306 PASS
+[  270.291859] test_bpf: #136 ALU_DIV_X: 6 / 2 = 3 jited:1 538 PASS
+[  270.296241] test_bpf: #137 ALU_DIV_X: 4294967295 / 4294967295 = 1 jited:1 327 PASS
+[  270.297525] test_bpf: #138 ALU64_DIV_X: 6 / 2 = 3 jited:1 312 PASS
+[  270.298717] test_bpf: #139 ALU64_DIV_X: 2147483647 / 2147483647 = 1 jited:1 497 PASS
+[  270.303833] test_bpf: #140 ALU64_DIV_X: 0xffffffffffffffff / (-1) = 0x0000000000000001 jited:1 557 PASS
+[  270.308260] test_bpf: #141 ALU_DIV_K: 6 / 2 = 3 jited:1 329 PASS
+[  270.309496] test_bpf: #142 ALU_DIV_K: 3 / 1 = 3 jited:1 321 PASS
+[  270.310658] test_bpf: #143 ALU_DIV_K: 4294967295 / 4294967295 = 1 jited:1 492 PASS
+[  270.315883] test_bpf: #144 ALU_DIV_K: 0xffffffffffffffff / (-1) = 0x1 jited:1 545 PASS
+[  270.320064] test_bpf: #145 ALU64_DIV_K: 6 / 2 = 3 jited:1 308 PASS
+[  270.321362] test_bpf: #146 ALU64_DIV_K: 3 / 1 = 3 jited:1 318 PASS
+[  270.322547] test_bpf: #147 ALU64_DIV_K: 2147483647 / 2147483647 = 1 jited:1 314 PASS
+[  270.325184] test_bpf: #148 ALU64_DIV_K: 0xffffffffffffffff / (-1) = 0x0000000000000001 jited:1 352 PASS
+[  270.331948] test_bpf: #149 ALU_MOD_X: 3 % 2 = 1 jited:1 319 PASS
+[  270.335627] test_bpf: #150 ALU_MOD_X: 4294967295 % 4294967293 = 2 jited:1 333 PASS
+[  270.343636] test_bpf: #151 ALU64_MOD_X: 3 % 2 = 1 jited:1 362 PASS
+[  270.351630] test_bpf: #152 ALU64_MOD_X: 2147483647 % 2147483645 = 2 jited:1 536 PASS
+[  270.359257] test_bpf: #153 ALU_MOD_K: 3 % 2 = 1 jited:1 379 PASS
+[  270.363370] test_bpf: #154 ALU_MOD_K: 3 % 1 = 0 jited:1 318 PASS
+[  270.364712] test_bpf: #155 ALU_MOD_K: 4294967295 % 4294967293 = 2 jited:1 315 PASS
+[  270.366010] test_bpf: #156 ALU64_MOD_K: 3 % 2 = 1 jited:1 312 PASS
+[  270.367193] test_bpf: #157 ALU64_MOD_K: 3 % 1 = 0 jited:1 324 PASS
+[  270.371962] test_bpf: #158 ALU64_MOD_K: 2147483647 % 2147483645 = 2 jited:1 355 PASS
+[  270.376756] test_bpf: #159 ALU_AND_X: 3 & 2 = 2 jited:1 302 PASS
+[  270.378080] test_bpf: #160 ALU_AND_X: 0xffffffff & 0xffffffff = 0xffffffff jited:1 306 PASS
+[  270.379356] test_bpf: #161 ALU64_AND_X: 3 & 2 = 2 jited:1 317 PASS
+[  270.387007] test_bpf: #162 ALU64_AND_X: 0xffffffff & 0xffffffff = 0xffffffff jited:1 310 PASS
+[  270.388512] test_bpf: #163 ALU_AND_K: 3 & 2 = 2 jited:1 301 PASS
+[  270.389733] test_bpf: #164 ALU_AND_K: 0xffffffff & 0xffffffff = 0xffffffff jited:1 302 PASS
+[  270.391011] test_bpf: #165 ALU_AND_K: Small immediate jited:1 303 PASS
+[  270.395959] test_bpf: #166 ALU_AND_K: Large immediate jited:1 344 PASS
+[  270.400366] test_bpf: #167 ALU_AND_K: Zero extension jited:1 330 PASS
+[  270.401597] test_bpf: #168 ALU64_AND_K: 3 & 2 = 2 jited:1 300 PASS
+[  270.402751] test_bpf: #169 ALU64_AND_K: 0xffffffff & 0xffffffff = 0xffffffff jited:1 483 PASS
+[  270.407867] test_bpf: #170 ALU64_AND_K: 0x0000ffffffff0000 & 0x0 = 0x0000000000000000 jited:1 332 PASS
+[  270.412052] test_bpf: #171 ALU64_AND_K: 0x0000ffffffff0000 & -1 = 0x0000ffffffff0000 jited:1 319 PASS
+[  270.413420] test_bpf: #172 ALU64_AND_K: 0xffffffffffffffff & -1 = 0xffffffffffffffff jited:1 316 PASS
+[  270.414740] test_bpf: #173 ALU64_AND_K: Sign extension 1 jited:1 492 PASS
+[  270.419909] test_bpf: #174 ALU64_AND_K: Sign extension 2 jited:1 544 PASS
+[  270.424061] test_bpf: #175 ALU_OR_X: 1 | 2 = 3 jited:1 299 PASS
+[  270.425369] test_bpf: #176 ALU_OR_X: 0x0 | 0xffffffff = 0xffffffff jited:1 309 PASS
+[  270.426600] test_bpf: #177 ALU64_OR_X: 1 | 2 = 3 jited:1 301 PASS
+[  270.428634] test_bpf: #178 ALU64_OR_X: 0 | 0xffffffff = 0xffffffff jited:1 327 PASS
+[  270.435975] test_bpf: #179 ALU_OR_K: 1 | 2 = 3 jited:1 307 PASS
+[  270.437195] test_bpf: #180 ALU_OR_K: 0 & 0xffffffff = 0xffffffff jited:1 306 PASS
+[  270.438423] test_bpf: #181 ALU_OR_K: Small immediate jited:1 313 PASS
+[  270.443601] test_bpf: #182 ALU_OR_K: Large immediate jited:1 453 PASS
+[  270.451197] test_bpf: #183 ALU_OR_K: Zero extension jited:1 345 PASS
+[  270.455399] test_bpf: #184 ALU64_OR_K: 1 | 2 = 3 jited:1 300 PASS
+[  270.456734] test_bpf: #185 ALU64_OR_K: 0 & 0xffffffff = 0xffffffff jited:1 301 PASS
+[  270.457977] test_bpf: #186 ALU64_OR_K: 0x0000ffffffff0000 | 0x0 = 0x0000ffffffff0000 jited:1 321 PASS
+[  270.459324] test_bpf: #187 ALU64_OR_K: 0x0000ffffffff0000 | -1 = 0xffffffffffffffff jited:1 343 PASS
+[  270.467355] test_bpf: #188 ALU64_OR_K: 0x000000000000000 | -1 = 0xffffffffffffffff jited:1 384 PASS
+[  270.469130] test_bpf: #189 ALU64_OR_K: Sign extension 1 jited:1 327 PASS
+[  270.470479] test_bpf: #190 ALU64_OR_K: Sign extension 2 jited:1 318 PASS
+[  270.472134] test_bpf: #191 ALU_XOR_X: 5 ^ 6 = 3 jited:1 359 PASS
+[  270.473649] test_bpf: #192 ALU_XOR_X: 0x1 ^ 0xffffffff = 0xfffffffe jited:1 307 PASS
+[  270.474919] test_bpf: #193 ALU64_XOR_X: 5 ^ 6 = 3 jited:1 515 PASS
+[  270.479647] test_bpf: #194 ALU64_XOR_X: 1 ^ 0xffffffff = 0xfffffffe jited:1 345 PASS
+[  270.485009] test_bpf: #195 ALU_XOR_K: 5 ^ 6 = 3 jited:1 307 PASS
+[  270.486190] test_bpf: #196 ALU_XOR_K: 1 ^ 0xffffffff = 0xfffffffe jited:1 306 PASS
+[  270.487407] test_bpf: #197 ALU_XOR_K: Small immediate jited:1 321 PASS
+[  270.495284] test_bpf: #198 ALU_XOR_K: Large immediate jited:1 318 PASS
+[  270.496656] test_bpf: #199 ALU_XOR_K: Zero extension jited:1 321 PASS
+[  270.497906] test_bpf: #200 ALU64_XOR_K: 5 ^ 6 = 3 jited:1 298 PASS
+[  270.499072] test_bpf: #201 ALU64_XOR_K: 1 ^ 0xffffffff = 0xfffffffe jited:1 308 PASS
+[  270.503954] test_bpf: #202 ALU64_XOR_K: 0x0000ffffffff0000 ^ 0x0 = 0x0000ffffffff0000 jited:1 370 PASS
+[  270.508810] test_bpf: #203 ALU64_XOR_K: 0x0000ffffffff0000 ^ -1 = 0xffff00000000ffff jited:1 321 PASS
+[  270.510180] test_bpf: #204 ALU64_XOR_K: 0x000000000000000 ^ -1 = 0xffffffffffffffff jited:1 316 PASS
+[  270.512472] test_bpf: #205 ALU64_XOR_K: Sign extension 1 jited:1 349 PASS
+[  270.519217] test_bpf: #206 ALU64_XOR_K: Sign extension 2 jited:1 399 PASS
+[  270.520705] test_bpf: #207 ALU_LSH_X: 1 << 1 = 2 jited:1 305 PASS
+[  270.521891] test_bpf: #208 ALU_LSH_X: 1 << 31 = 0x80000000 jited:1 305 PASS
+[  270.523100] test_bpf: #209 ALU_LSH_X: 0x12345678 << 12 = 0x45678000 jited:1 314 PASS
+[  270.527914] test_bpf: #210 ALU64_LSH_X: 1 << 1 = 2 jited:1 345 PASS
+[  270.532850] test_bpf: #211 ALU64_LSH_X: 1 << 31 = 0x80000000 jited:1 310 PASS
+[  270.534096] test_bpf: #212 ALU64_LSH_X: Shift < 32, low word jited:1 298 PASS
+[  270.535359] test_bpf: #213 ALU64_LSH_X: Shift < 32, high word jited:1 323 PASS
+[  270.543243] test_bpf: #214 ALU64_LSH_X: Shift > 32, low word jited:1 317 PASS
+[  270.544673] test_bpf: #215 ALU64_LSH_X: Shift > 32, high word jited:1 314 PASS
+[  270.545906] test_bpf: #216 ALU64_LSH_X: Shift == 32, low word jited:1 306 PASS
+[  270.547186] test_bpf: #217 ALU64_LSH_X: Shift == 32, high word jited:1 323 PASS
+[  270.551908] test_bpf: #218 ALU64_LSH_X: Zero shift, low word jited:1 349 PASS
+[  270.556847] test_bpf: #219 ALU64_LSH_X: Zero shift, high word jited:1 312 PASS
+[  270.558116] test_bpf: #220 ALU_LSH_K: 1 << 1 = 2 jited:1 308 PASS
+[  270.559327] test_bpf: #221 ALU_LSH_K: 1 << 31 = 0x80000000 jited:1 309 PASS
+[  270.563739] test_bpf: #222 ALU_LSH_K: 0x12345678 << 12 = 0x45678000 jited:1 329 PASS
+[  270.568666] test_bpf: #223 ALU_LSH_K: 0x12345678 << 0 = 0x12345678 jited:1 297 PASS
+[  270.570028] test_bpf: #224 ALU64_LSH_K: 1 << 1 = 2 jited:1 308 PASS
+[  270.571224] test_bpf: #225 ALU64_LSH_K: 1 << 31 = 0x80000000 jited:1 310 PASS
+[  270.575827] test_bpf: #226 ALU64_LSH_K: Shift < 32, low word jited:1 354 PASS
+[  270.580568] test_bpf: #227 ALU64_LSH_K: Shift < 32, high word jited:1 307 PASS
+[  270.581820] test_bpf: #228 ALU64_LSH_K: Shift > 32, low word jited:1 303 PASS
+[  270.583050] test_bpf: #229 ALU64_LSH_K: Shift > 32, high word jited:1 316 PASS
+[  270.587895] test_bpf: #230 ALU64_LSH_K: Shift == 32, low word jited:1 480 PASS
+[  270.592120] test_bpf: #231 ALU64_LSH_K: Shift == 32, high word jited:1 307 PASS
+[  270.593378] test_bpf: #232 ALU64_LSH_K: Zero shift jited:1 309 PASS
+[  270.594549] test_bpf: #233 ALU_RSH_X: 2 >> 1 = 1 jited:1 302 PASS
+[  270.596889] test_bpf: #234 ALU_RSH_X: 0x80000000 >> 31 = 1 jited:1 324 PASS
+[  270.603362] test_bpf: #235 ALU_RSH_X: 0x12345678 >> 20 = 0x123 jited:1 307 PASS
+[  270.604802] test_bpf: #236 ALU64_RSH_X: 2 >> 1 = 1 jited:1 309 PASS
+[  270.606049] test_bpf: #237 ALU64_RSH_X: 0x80000000 >> 31 = 1 jited:1 304 PASS
+[  270.607289] test_bpf: #238 ALU64_RSH_X: Shift < 32, low word jited:1 337 PASS
+[  270.611854] test_bpf: #239 ALU64_RSH_X: Shift < 32, high word jited:1 354 PASS
+[  270.616880] test_bpf: #240 ALU64_RSH_X: Shift > 32, low word jited:1 315 PASS
+[  270.618151] test_bpf: #241 ALU64_RSH_X: Shift > 32, high word jited:1 306 PASS
+[  270.619394] test_bpf: #242 ALU64_RSH_X: Shift == 32, low word jited:1 330 PASS
+[  270.626939] test_bpf: #243 ALU64_RSH_X: Shift == 32, high word jited:1 317 PASS
+[  270.628510] test_bpf: #244 ALU64_RSH_X: Zero shift, low word jited:1 288 PASS
+[  270.629721] test_bpf: #245 ALU64_RSH_X: Zero shift, high word jited:1 285 PASS
+[  270.630889] test_bpf: #246 ALU_RSH_K: 2 >> 1 = 1 jited:1 492 PASS
+[  270.635985] test_bpf: #247 ALU_RSH_K: 0x80000000 >> 31 = 1 jited:1 494 PASS
+[  270.640106] test_bpf: #248 ALU_RSH_K: 0x12345678 >> 20 = 0x123 jited:1 308 PASS
+[  270.641346] test_bpf: #249 ALU_RSH_K: 0x12345678 >> 0 = 0x12345678 jited:1 308 PASS
+[  270.642570] test_bpf: #250 ALU64_RSH_K: 2 >> 1 = 1 jited:1 282 PASS
+[  270.644882] test_bpf: #251 ALU64_RSH_K: 0x80000000 >> 31 = 1 jited:1 326 PASS
+[  270.651276] test_bpf: #252 ALU64_RSH_K: Shift < 32, low word jited:1 314 PASS
+[  270.652734] test_bpf: #253 ALU64_RSH_K: Shift < 32, high word jited:1 283 PASS
+[  270.653912] test_bpf: #254 ALU64_RSH_K: Shift > 32, low word jited:1 283 PASS
+[  270.655045] test_bpf: #255 ALU64_RSH_K: Shift > 32, high word jited:1 309 PASS
+[  270.660018] test_bpf: #256 ALU64_RSH_K: Shift == 32, low word jited:1 493 PASS
+[  270.664140] test_bpf: #257 ALU64_RSH_K: Shift == 32, high word jited:1 315 PASS
+[  270.665385] test_bpf: #258 ALU64_RSH_K: Zero shift jited:1 284 PASS
+[  270.666550] test_bpf: #259 ALU32_ARSH_X: -1234 >> 7 = -10 jited:1 299 PASS
+[  270.671752] test_bpf: #260 ALU64_ARSH_X: 0xff00ff0000000000 >> 40 = 0xffffffffffff00ff jited:1 336 PASS
+[  270.675965] test_bpf: #261 ALU64_ARSH_X: Shift < 32, low word jited:1 308 PASS
+[  270.677222] test_bpf: #262 ALU64_ARSH_X: Shift < 32, high word jited:1 327 PASS
+[  270.678495] test_bpf: #263 ALU64_ARSH_X: Shift > 32, low word jited:1 304 PASS
+[  270.680866] test_bpf: #264 ALU64_ARSH_X: Shift > 32, high word jited:1 325 PASS
+[  270.687361] test_bpf: #265 ALU64_ARSH_X: Shift == 32, low word jited:1 317 PASS
+[  270.688846] test_bpf: #266 ALU64_ARSH_X: Shift == 32, high word jited:1 313 PASS
+[  270.690133] test_bpf: #267 ALU64_ARSH_X: Zero shift, low word jited:1 310 PASS
+[  270.691388] test_bpf: #268 ALU64_ARSH_X: Zero shift, high word jited:1 338 PASS
+[  270.699873] test_bpf: #269 ALU32_ARSH_K: -1234 >> 7 = -10 jited:1 330 PASS
+[  270.706566] test_bpf: #270 ALU32_ARSH_K: -1234 >> 0 = -1234 jited:1 317 PASS
+[  270.708021] test_bpf: #271 ALU64_ARSH_K: 0xff00ff0000000000 >> 40 = 0xffffffffffff00ff jited:1 305 PASS
+[  270.709366] test_bpf: #272 ALU64_ARSH_K: Shift < 32, low word jited:1 310 PASS
+[  270.710605] test_bpf: #273 ALU64_ARSH_K: Shift < 32, high word jited:1 482 PASS
+[  270.715930] test_bpf: #274 ALU64_ARSH_K: Shift > 32, low word jited:1 529 PASS
+[  270.720302] test_bpf: #275 ALU64_ARSH_K: Shift > 32, high word jited:1 311 PASS
+[  270.721544] test_bpf: #276 ALU64_ARSH_K: Shift == 32, low word jited:1 308 PASS
+[  270.722798] test_bpf: #277 ALU64_ARSH_K: Shift == 32, high word jited:1 475 PASS
+[  270.725062] test_bpf: #278 ALU64_ARSH_K: Zero shift jited:1 343 PASS
+[  270.732356] test_bpf: #279 ALU_NEG: -(3) = -3 jited:1 308 PASS
+[  270.733525] test_bpf: #280 ALU_NEG: -(-3) = 3 jited:1 304 PASS
+[  270.734680] test_bpf: #281 ALU64_NEG: -(3) = -3 jited:1 472 PASS
+[  270.739777] test_bpf: #282 ALU64_NEG: -(-3) = 3 jited:1 546 PASS
+[  270.744080] test_bpf: #283 ALU_END_FROM_BE 16: 0x0123456789abcdef -> 0xcdef jited:1 308 PASS
+[  270.745377] test_bpf: #284 ALU_END_FROM_BE 32: 0x0123456789abcdef -> 0x89abcdef jited:1 311 PASS
+[  270.746903] test_bpf: #285 ALU_END_FROM_BE 64: 0x0123456789abcdef -> 0x89abcdef jited:1 322 PASS
+[  270.751985] test_bpf: #286 ALU_END_FROM_BE 64: 0x0123456789abcdef >> 32 -> 0x01234567 jited:1 371 PASS
+[  270.756880] test_bpf: #287 ALU_END_FROM_BE 16: 0xfedcba9876543210 -> 0x3210 jited:1 309 PASS
+[  270.758189] test_bpf: #288 ALU_END_FROM_BE 32: 0xfedcba9876543210 -> 0x76543210 jited:1 318 PASS
+[  270.763172] test_bpf: #289 ALU_END_FROM_BE 64: 0xfedcba9876543210 -> 0x76543210 jited:1 339 PASS
+[  270.767634] test_bpf: #290 ALU_END_FROM_BE 64: 0xfedcba9876543210 >> 32 -> 0xfedcba98 jited:1 296 PASS
+[  270.768897] test_bpf: #291 ALU_END_FROM_LE 16: 0x0123456789abcdef -> 0xefcd jited:1 281 PASS
+[  270.770166] test_bpf: #292 ALU_END_FROM_LE 32: 0x0123456789abcdef -> 0xefcdab89 jited:1 287 PASS
+[  270.771441] test_bpf: #293 ALU_END_FROM_LE 64: 0x0123456789abcdef -> 0x67452301 jited:1 305 PASS
+[  270.773213] test_bpf: #294 ALU_END_FROM_LE 64: 0x0123456789abcdef >> 32 -> 0xefcdab89 jited:1 284 PASS
+[  270.774457] test_bpf: #295 ALU_END_FROM_LE 16: 0xfedcba9876543210 -> 0x1032 jited:1 297 PASS
+[  270.779677] test_bpf: #296 ALU_END_FROM_LE 32: 0xfedcba9876543210 -> 0x10325476 jited:1 490 PASS
+[  270.787363] test_bpf: #297 ALU_END_FROM_LE 64: 0xfedcba9876543210 -> 0x10325476 jited:1 321 PASS
+[  270.791864] test_bpf: #298 ALU_END_FROM_LE 64: 0xfedcba9876543210 >> 32 -> 0x98badcfe jited:1 330 PASS
+[  270.798787] test_bpf: #299 BPF_LDX_MEM | BPF_B, base jited:1 324 PASS
+[  270.800306] test_bpf: #300 BPF_LDX_MEM | BPF_B, MSB set jited:1 319 PASS
+[  270.801555] test_bpf: #301 BPF_LDX_MEM | BPF_B, negative offset jited:1 298 PASS
+[  270.802860] test_bpf: #302 BPF_LDX_MEM | BPF_B, small positive offset jited:1 520 PASS
+[  270.807899] test_bpf: #303 BPF_LDX_MEM | BPF_B, large positive offset jited:1 516 PASS
+[  270.812284] test_bpf: #304 BPF_LDX_MEM | BPF_H, base jited:1 325 PASS
+[  270.813535] test_bpf: #305 BPF_LDX_MEM | BPF_H, MSB set jited:1 320 PASS
+[  270.814723] test_bpf: #306 BPF_LDX_MEM | BPF_H, negative offset jited:1 501 PASS
+[  270.816882] test_bpf: #307 BPF_LDX_MEM | BPF_H, small positive offset jited:1 504 PASS
+[  270.824310] test_bpf: #308 BPF_LDX_MEM | BPF_H, large positive offset jited:1 311 PASS
+[  270.825676] test_bpf: #309 BPF_LDX_MEM | BPF_H, unaligned positive offset jited:1 313 PASS
+[  270.826905] test_bpf: #310 BPF_LDX_MEM | BPF_W, base jited:1 371 PASS
+[  270.831934] test_bpf: #311 BPF_LDX_MEM | BPF_W, MSB set jited:1 524 PASS
+[  270.836145] test_bpf: #312 BPF_LDX_MEM | BPF_W, negative offset jited:1 310 PASS
+[  270.837452] test_bpf: #313 BPF_LDX_MEM | BPF_W, small positive offset jited:1 311 PASS
+[  270.838663] test_bpf: #314 BPF_LDX_MEM | BPF_W, large positive offset jited:1 520 PASS
+[  270.843961] test_bpf: #315 BPF_LDX_MEM | BPF_W, unaligned positive offset jited:1 510 PASS
+[  270.848257] test_bpf: #316 BPF_LDX_MEM | BPF_DW, base jited:1 322 PASS
+[  270.849473] test_bpf: #317 BPF_LDX_MEM | BPF_DW, MSB set jited:1 314 PASS
+[  270.850648] test_bpf: #318 BPF_LDX_MEM | BPF_DW, negative offset jited:1 504 PASS
+[  270.852972] test_bpf: #319 BPF_LDX_MEM | BPF_DW, small positive offset jited:1 365 PASS
+[  270.863201] test_bpf: #320 BPF_LDX_MEM | BPF_DW, large positive offset jited:1 355 PASS
+[  270.867946] test_bpf: #321 BPF_LDX_MEM | BPF_DW, unaligned positive offset jited:1 352 PASS
+[  270.874906] test_bpf: #322 BPF_STX_MEM | BPF_B jited:1 350 PASS
+[  270.876366] test_bpf: #323 BPF_STX_MEM | BPF_B, MSB set jited:1 336 PASS
+[  270.877633] test_bpf: #324 BPF_STX_MEM | BPF_H jited:1 326 PASS
+[  270.878794] test_bpf: #325 BPF_STX_MEM | BPF_H, MSB set jited:1 567 PASS
+[  270.883885] test_bpf: #326 BPF_STX_MEM | BPF_W jited:1 541 PASS
+[  270.888298] test_bpf: #327 BPF_STX_MEM | BPF_W, MSB set jited:1 335 PASS
+[  270.889549] test_bpf: #328 ST_MEM_B: Store/Load byte: max negative jited:1 315 PASS
+[  270.890920] test_bpf: #329 ST_MEM_B: Store/Load byte: max positive jited:1 322 PASS
+[  270.895787] test_bpf: #330 STX_MEM_B: Store/Load byte: max negative jited:1 549 PASS
+[  270.900124] test_bpf: #331 ST_MEM_H: Store/Load half word: max negative jited:1 321 PASS
+[  270.901422] test_bpf: #332 ST_MEM_H: Store/Load half word: max positive jited:1 307 PASS
+[  270.902643] test_bpf: #333 STX_MEM_H: Store/Load half word: max negative jited:1 505 PASS
+[  270.904892] test_bpf: #334 ST_MEM_W: Store/Load word: max negative jited:1 332 PASS
+[  270.912183] test_bpf: #335 ST_MEM_W: Store/Load word: max positive jited:1 330 PASS
+[  270.913428] test_bpf: #336 STX_MEM_W: Store/Load word: max negative jited:1 303 PASS
+[  270.914632] test_bpf: #337 ST_MEM_DW: Store/Load double word: max negative jited:1 502 PASS
+[  270.919854] test_bpf: #338 ST_MEM_DW: Store/Load double word: max negative 2 jited:1 566 PASS
+[  270.924133] test_bpf: #339 ST_MEM_DW: Store/Load double word: max positive jited:1 324 PASS
+[  270.925459] test_bpf: #340 STX_MEM_DW: Store/Load double word: max negative jited:1 335 PASS
+[  270.926796] test_bpf: #341 STX_MEM_DW: Store double word: first word in memory jited:1 495 PASS
+[  270.932019] test_bpf: #342 STX_MEM_DW: Store double word: second word in memory jited:1 364 PASS
+[  270.936407] test_bpf: #343 STX_XADD_W: X + 1 + 1 + 1 + ... jited:1 131587 PASS
+[  271.083912] test_bpf: #344 STX_XADD_DW: X + 1 + 1 + 1 + ... jited:1 124990 PASS
+[  271.226619] test_bpf: #345 BPF_ATOMIC | BPF_W, BPF_ADD: Test: 0x12 + 0xab = 0xbd jited:1 520 PASS
+[  271.228514] test_bpf: #346 BPF_ATOMIC | BPF_W, BPF_ADD: Test side effects, r10: 0x12 + 0xab = 0xbd jited:1 346 PASS
+[  271.230000] test_bpf: #347 BPF_ATOMIC | BPF_W, BPF_ADD: Test side effects, r0: 0x12 + 0xab = 0xbd jited:1 347 PASS
+[  271.235685] test_bpf: #348 BPF_ATOMIC | BPF_W, BPF_ADD: Test fetch: 0x12 + 0xab = 0xbd jited:1 390 PASS
+[  271.241901] test_bpf: #349 BPF_ATOMIC | BPF_W, BPF_ADD | BPF_FETCH: Test: 0x12 + 0xab = 0xbd jited:1 342 PASS
+[  271.243791] test_bpf: #350 BPF_ATOMIC | BPF_W, BPF_ADD | BPF_FETCH: Test side effects, r10: 0x12 + 0xab = 0xbd jited:1 366 PASS
+[  271.251686] test_bpf: #351 BPF_ATOMIC | BPF_W, BPF_ADD | BPF_FETCH: Test side effects, r0: 0x12 + 0xab = 0xbd jited:1 345 PASS
+[  271.253165] test_bpf: #352 BPF_ATOMIC | BPF_W, BPF_ADD | BPF_FETCH: Test fetch: 0x12 + 0xab = 0xbd jited:1 345 PASS
+[  271.254667] test_bpf: #353 BPF_ATOMIC | BPF_DW, BPF_ADD: Test: 0x12 + 0xab = 0xbd jited:1 514 PASS
+[  271.260160] test_bpf: #354 BPF_ATOMIC | BPF_DW, BPF_ADD: Test side effects, r10: 0x12 + 0xab = 0xbd jited:1 392 PASS
+[  271.267634] test_bpf: #355 BPF_ATOMIC | BPF_DW, BPF_ADD: Test side effects, r0: 0x12 + 0xab = 0xbd jited:1 542 PASS
+[  271.275667] test_bpf: #356 BPF_ATOMIC | BPF_DW, BPF_ADD: Test fetch: 0x12 + 0xab = 0xbd jited:1 391 PASS
+[  271.283250] test_bpf: #357 BPF_ATOMIC | BPF_DW, BPF_ADD | BPF_FETCH: Test: 0x12 + 0xab = 0xbd jited:1 364 PASS
+[  271.288097] test_bpf: #358 BPF_ATOMIC | BPF_DW, BPF_ADD | BPF_FETCH: Test side effects, r10: 0x12 + 0xab = 0xbd jited:1 397 PASS
+[  271.295371] test_bpf: #359 BPF_ATOMIC | BPF_DW, BPF_ADD | BPF_FETCH: Test side effects, r0: 0x12 + 0xab = 0xbd jited:1 343 PASS
+[  271.297045] test_bpf: #360 BPF_ATOMIC | BPF_DW, BPF_ADD | BPF_FETCH: Test fetch: 0x12 + 0xab = 0xbd jited:1 341 PASS
+[  271.298463] test_bpf: #361 BPF_ATOMIC | BPF_W, BPF_AND: Test: 0x12 & 0xab = 0x02 jited:1 350 PASS
+[  271.303901] test_bpf: #362 BPF_ATOMIC | BPF_W, BPF_AND: Test side effects, r10: 0x12 & 0xab = 0x02 jited:1 559 PASS
+[  271.308402] test_bpf: #363 BPF_ATOMIC | BPF_W, BPF_AND: Test side effects, r0: 0x12 & 0xab = 0x02 jited:1 347 PASS
+[  271.309838] test_bpf: #364 BPF_ATOMIC | BPF_W, BPF_AND: Test fetch: 0x12 & 0xab = 0x02 jited:1 347 PASS
+[  271.311212] test_bpf: #365 BPF_ATOMIC | BPF_W, BPF_AND | BPF_FETCH: Test: 0x12 & 0xab = 0x02 jited:1 362 PASS
+[  271.315829] test_bpf: #366 BPF_ATOMIC | BPF_W, BPF_AND | BPF_FETCH: Test side effects, r10: 0x12 & 0xab = 0x02 jited:1 384 PASS
+[  271.320912] test_bpf: #367 BPF_ATOMIC | BPF_W, BPF_AND | BPF_FETCH: Test side effects, r0: 0x12 & 0xab = 0x02 jited:1 349 PASS
+[  271.322458] test_bpf: #368 BPF_ATOMIC | BPF_W, BPF_AND | BPF_FETCH: Test fetch: 0x12 & 0xab = 0x02 jited:1 344 PASS
+[  271.327908] test_bpf: #369 BPF_ATOMIC | BPF_DW, BPF_AND: Test: 0x12 & 0xab = 0x02 jited:1 568 PASS
+[  271.332241] test_bpf: #370 BPF_ATOMIC | BPF_DW, BPF_AND: Test side effects, r10: 0x12 & 0xab = 0x02 jited:1 355 PASS
+[  271.333700] test_bpf: #371 BPF_ATOMIC | BPF_DW, BPF_AND: Test side effects, r0: 0x12 & 0xab = 0x02 jited:1 336 PASS
+[  271.335108] test_bpf: #372 BPF_ATOMIC | BPF_DW, BPF_AND: Test fetch: 0x12 & 0xab = 0x02 jited:1 342 PASS
+[  271.339914] test_bpf: #373 BPF_ATOMIC | BPF_DW, BPF_AND | BPF_FETCH: Test: 0x12 & 0xab = 0x02 jited:1 385 PASS
+[  271.344819] test_bpf: #374 BPF_ATOMIC | BPF_DW, BPF_AND | BPF_FETCH: Test side effects, r10: 0x12 & 0xab = 0x02 jited:1 339 PASS
+[  271.346287] test_bpf: #375 BPF_ATOMIC | BPF_DW, BPF_AND | BPF_FETCH: Test side effects, r0: 0x12 & 0xab = 0x02 jited:1 343 PASS
+[  271.348754] test_bpf: #376 BPF_ATOMIC | BPF_DW, BPF_AND | BPF_FETCH: Test fetch: 0x12 & 0xab = 0x02 jited:1 363 PASS
+[  271.355817] test_bpf: #377 BPF_ATOMIC | BPF_W, BPF_OR: Test: 0x12 | 0xab = 0xbb jited:1 350 PASS
+[  271.357293] test_bpf: #378 BPF_ATOMIC | BPF_W, BPF_OR: Test side effects, r10: 0x12 | 0xab = 0xbb jited:1 351 PASS
+[  271.358719] test_bpf: #379 BPF_ATOMIC | BPF_W, BPF_OR: Test side effects, r0: 0x12 | 0xab = 0xbb jited:1 513 PASS
+[  271.363862] test_bpf: #380 BPF_ATOMIC | BPF_W, BPF_OR: Test fetch: 0x12 | 0xab = 0xbb jited:1 569 PASS
+[  271.368337] test_bpf: #381 BPF_ATOMIC | BPF_W, BPF_OR | BPF_FETCH: Test: 0x12 | 0xab = 0xbb jited:1 346 PASS
+[  271.369865] test_bpf: #382 BPF_ATOMIC | BPF_W, BPF_OR | BPF_FETCH: Test side effects, r10: 0x12 | 0xab = 0xbb jited:1 353 PASS
+[  271.371357] test_bpf: #383 BPF_ATOMIC | BPF_W, BPF_OR | BPF_FETCH: Test side effects, r0: 0x12 | 0xab = 0xbb jited:1 363 PASS
+[  271.379728] test_bpf: #384 BPF_ATOMIC | BPF_W, BPF_OR | BPF_FETCH: Test fetch: 0x12 | 0xab = 0xbb jited:1 364 PASS
+[  271.386542] test_bpf: #385 BPF_ATOMIC | BPF_DW, BPF_OR: Test: 0x12 | 0xab = 0xbb jited:1 568 PASS
+[  271.388180] test_bpf: #386 BPF_ATOMIC | BPF_DW, BPF_OR: Test side effects, r10: 0x12 | 0xab = 0xbb jited:1 350 PASS
+[  271.389673] test_bpf: #387 BPF_ATOMIC | BPF_DW, BPF_OR: Test side effects, r0: 0x12 | 0xab = 0xbb jited:1 337 PASS
+[  271.391215] test_bpf: #388 BPF_ATOMIC | BPF_DW, BPF_OR: Test fetch: 0x12 | 0xab = 0xbb jited:1 341 PASS
+[  271.395789] test_bpf: #389 BPF_ATOMIC | BPF_DW, BPF_OR | BPF_FETCH: Test: 0x12 | 0xab = 0xbb jited:1 360 PASS
+[  271.400874] test_bpf: #390 BPF_ATOMIC | BPF_DW, BPF_OR | BPF_FETCH: Test side effects, r10: 0x12 | 0xab = 0xbb jited:1 338 PASS
+[  271.402357] test_bpf: #391 BPF_ATOMIC | BPF_DW, BPF_OR | BPF_FETCH: Test side effects, r0: 0x12 | 0xab = 0xbb jited:1 334 PASS
+[  271.404902] test_bpf: #392 BPF_ATOMIC | BPF_DW, BPF_OR | BPF_FETCH: Test fetch: 0x12 | 0xab = 0xbb jited:1 359 PASS
+[  271.411665] test_bpf: #393 BPF_ATOMIC | BPF_W, BPF_XOR: Test: 0x12 ^ 0xab = 0xb9 jited:1 357 PASS
+[  271.413132] test_bpf: #394 BPF_ATOMIC | BPF_W, BPF_XOR: Test side effects, r10: 0x12 ^ 0xab = 0xb9 jited:1 351 PASS
+[  271.414570] test_bpf: #395 BPF_ATOMIC | BPF_W, BPF_XOR: Test side effects, r0: 0x12 ^ 0xab = 0xb9 jited:1 537 PASS
+[  271.420012] test_bpf: #396 BPF_ATOMIC | BPF_W, BPF_XOR: Test fetch: 0x12 ^ 0xab = 0xb9 jited:1 575 PASS
+[  271.424359] test_bpf: #397 BPF_ATOMIC | BPF_W, BPF_XOR | BPF_FETCH: Test: 0x12 ^ 0xab = 0xb9 jited:1 330 PASS
+[  271.425838] test_bpf: #398 BPF_ATOMIC | BPF_W, BPF_XOR | BPF_FETCH: Test side effects, r10: 0x12 ^ 0xab = 0xb9 jited:1 338 PASS
+[  271.427307] test_bpf: #399 BPF_ATOMIC | BPF_W, BPF_XOR | BPF_FETCH: Test side effects, r0: 0x12 ^ 0xab = 0xb9 jited:1 343 PASS
+[  271.431738] test_bpf: #400 BPF_ATOMIC | BPF_W, BPF_XOR | BPF_FETCH: Test fetch: 0x12 ^ 0xab = 0xb9 jited:1 360 PASS
+[  271.437083] test_bpf: #401 BPF_ATOMIC | BPF_DW, BPF_XOR: Test: 0x12 ^ 0xab = 0xb9 jited:1 355 PASS
+[  271.438506] test_bpf: #402 BPF_ATOMIC | BPF_DW, BPF_XOR: Test side effects, r10: 0x12 ^ 0xab = 0xb9 jited:1 367 PASS
+[  271.443898] test_bpf: #403 BPF_ATOMIC | BPF_DW, BPF_XOR: Test side effects, r0: 0x12 ^ 0xab = 0xb9 jited:1 524 PASS
+[  271.448178] test_bpf: #404 BPF_ATOMIC | BPF_DW, BPF_XOR: Test fetch: 0x12 ^ 0xab = 0xb9 jited:1 346 PASS
+[  271.449669] test_bpf: #405 BPF_ATOMIC | BPF_DW, BPF_XOR | BPF_FETCH: Test: 0x12 ^ 0xab = 0xb9 jited:1 338 PASS
+[  271.451117] test_bpf: #406 BPF_ATOMIC | BPF_DW, BPF_XOR | BPF_FETCH: Test side effects, r10: 0x12 ^ 0xab = 0xb9 jited:1 345 PASS
+[  271.455860] test_bpf: #407 BPF_ATOMIC | BPF_DW, BPF_XOR | BPF_FETCH: Test side effects, r0: 0x12 ^ 0xab = 0xb9 jited:1 384 PASS
+[  271.460977] test_bpf: #408 BPF_ATOMIC | BPF_DW, BPF_XOR | BPF_FETCH: Test fetch: 0x12 ^ 0xab = 0xb9 jited:1 342 PASS
+[  271.462443] test_bpf: #409 BPF_ATOMIC | BPF_W, BPF_XCHG: Test: 0x12 xchg 0xab = 0xab jited:1 551 PASS
+[  271.467829] test_bpf: #410 BPF_ATOMIC | BPF_W, BPF_XCHG: Test side effects, r10: 0x12 xchg 0xab = 0xab jited:1 360 PASS
+[  271.472308] test_bpf: #411 BPF_ATOMIC | BPF_W, BPF_XCHG: Test side effects, r0: 0x12 xchg 0xab = 0xab jited:1 355 PASS
+[  271.473762] test_bpf: #412 BPF_ATOMIC | BPF_W, BPF_XCHG: Test fetch: 0x12 xchg 0xab = 0xab jited:1 343 PASS
+[  271.475136] test_bpf: #413 BPF_ATOMIC | BPF_DW, BPF_XCHG: Test: 0x12 xchg 0xab = 0xab jited:1 356 PASS
+[  271.479986] test_bpf: #414 BPF_ATOMIC | BPF_DW, BPF_XCHG: Test side effects, r10: 0x12 xchg 0xab = 0xab jited:1 390 PASS
+[  271.484732] test_bpf: #415 BPF_ATOMIC | BPF_DW, BPF_XCHG: Test side effects, r0: 0x12 xchg 0xab = 0xab jited:1 343 PASS
+[  271.486198] test_bpf: #416 BPF_ATOMIC | BPF_DW, BPF_XCHG: Test fetch: 0x12 xchg 0xab = 0xab jited:1 351 PASS
+[  271.488581] test_bpf: #417 BPF_ATOMIC | BPF_W, BPF_CMPXCHG: Test successful return jited:1 436 PASS
+[  271.495735] test_bpf: #418 BPF_ATOMIC | BPF_W, BPF_CMPXCHG: Test successful store jited:1 390 PASS
+[  271.497221] test_bpf: #419 BPF_ATOMIC | BPF_W, BPF_CMPXCHG: Test failure return jited:1 349 PASS
+[  271.498541] test_bpf: #420 BPF_ATOMIC | BPF_W, BPF_CMPXCHG: Test failure store jited:1 343 PASS
+[  271.503850] test_bpf: #421 BPF_ATOMIC | BPF_W, BPF_CMPXCHG: Test side effects jited:1 633 PASS
+[  271.508197] test_bpf: #422 BPF_ATOMIC | BPF_DW, BPF_CMPXCHG: Test successful return jited:1 428 PASS
+[  271.509821] test_bpf: #423 BPF_ATOMIC | BPF_DW, BPF_CMPXCHG: Test successful store jited:1 399 PASS
+[  271.511267] test_bpf: #424 BPF_ATOMIC | BPF_DW, BPF_CMPXCHG: Test failure return jited:1 359 PASS
+[  271.515857] test_bpf: #425 BPF_ATOMIC | BPF_DW, BPF_CMPXCHG: Test failure store jited:1 392 PASS
+[  271.520731] test_bpf: #426 BPF_ATOMIC | BPF_DW, BPF_CMPXCHG: Test side effects jited:1 402 PASS
+[  271.522175] test_bpf: #427 JMP32_JEQ_K: Small immediate jited:1 302 PASS
+[  271.527213] test_bpf: #428 JMP32_JEQ_K: Large immediate jited:1 353 PASS
+[  271.531307] test_bpf: #429 JMP32_JEQ_K: negative immediate jited:1 325 PASS
+[  271.532741] test_bpf: #430 JMP32_JEQ_X jited:1 323 PASS
+[  271.534070] test_bpf: #431 JMP32_JNE_K: Small immediate jited:1 324 PASS
+[  271.535302] test_bpf: #432 JMP32_JNE_K: Large immediate jited:1 352 PASS
+[  271.537290] test_bpf: #433 JMP32_JNE_K: negative immediate jited:1 342 PASS
+[  271.538578] test_bpf: #434 JMP32_JNE_X jited:1 513 PASS
+[  271.543598] test_bpf: #435 JMP32_JSET_K: Small immediate jited:1 508 PASS
+[  271.551208] test_bpf: #436 JMP32_JSET_K: Large immediate jited:1 376 PASS
+[  271.555840] test_bpf: #437 JMP32_JSET_K: negative immediate jited:1 356 PASS
+[  271.562774] test_bpf: #438 JMP32_JSET_X jited:1 500 PASS
+[  271.564189] test_bpf: #439 JMP32_JGT_K: Small immediate jited:1 711 PASS
+[  271.565923] test_bpf: #440 JMP32_JGT_K: Large immediate jited:1 347 PASS
+[  271.569014] test_bpf: #441 JMP32_JGT_X jited:1 381 PASS
+[  271.575914] test_bpf: #442 JMP32_JGE_K: Small immediate jited:1 326 PASS
+[  271.577183] test_bpf: #443 JMP32_JGE_K: Large immediate jited:1 337 PASS
+[  271.578434] test_bpf: #444 JMP32_JGE_X jited:1 333 PASS
+[  271.579920] test_bpf: #445 JMP32_JLT_K: Small immediate jited:1 390 PASS
+[  271.581462] test_bpf: #446 JMP32_JLT_K: Large immediate jited:1 344 PASS
+[  271.582736] test_bpf: #447 JMP32_JLT_X jited:1 567 PASS
+[  271.587667] test_bpf: #448 JMP32_JLE_K: Small immediate jited:1 348 PASS
+[  271.595634] test_bpf: #449 JMP32_JLE_K: Large immediate jited:1 378 PASS
+[  271.603641] test_bpf: #450 JMP32_JLE_X jited:1 558 PASS
+[  271.611206] test_bpf: #451 JMP32_JSGT_K: Small immediate jited:1 370 PASS
+[  271.615753] test_bpf: #452 JMP32_JSGT_K: Large immediate jited:1 327 PASS
+[  271.617047] test_bpf: #453 JMP32_JSGT_X jited:1 332 PASS
+[  271.618371] test_bpf: #454 JMP32_JSGE_K: Small immediate jited:1 333 PASS
+[  271.619953] test_bpf: #455 JMP32_JSGE_K: Large immediate jited:1 379 PASS
+[  271.621465] test_bpf: #456 JMP32_JSGE_X jited:1 341 PASS
+[  271.622713] test_bpf: #457 JMP32_JSLT_K: Small immediate jited:1 502 PASS
+[  271.627659] test_bpf: #458 JMP32_JSLT_K: Large immediate jited:1 341 PASS
+[  271.635565] test_bpf: #459 JMP32_JSLT_X jited:1 571 PASS
+[  271.643203] test_bpf: #460 JMP32_JSLE_K: Small immediate jited:1 369 PASS
+[  271.647382] test_bpf: #461 JMP32_JSLE_K: Large immediate jited:1 327 PASS
+[  271.648739] test_bpf: #462 JMP32_JSLE_X jited:1 330 PASS
+[  271.649936] test_bpf: #463 JMP_EXIT jited:1 312 PASS
+[  271.651082] test_bpf: #464 JMP_JA: Unconditional jump: if (true) return 1 jited:1 318 PASS
+[  271.655903] test_bpf: #465 JMP_JSLT_K: Signed jump: if (-2 < -1) return 1 jited:1 372 PASS
+[  271.660958] test_bpf: #466 JMP_JSLT_K: Signed jump: if (-1 < -1) return 0 jited:1 322 PASS
+[  271.662265] test_bpf: #467 JMP_JSGT_K: Signed jump: if (-1 > -2) return 1 jited:1 327 PASS
+[  271.664604] test_bpf: #468 JMP_JSGT_K: Signed jump: if (-1 > -1) return 0 jited:1 344 PASS
+[  271.671584] test_bpf: #469 JMP_JSLE_K: Signed jump: if (-2 <= -1) return 1 jited:1 315 PASS
+[  271.672919] test_bpf: #470 JMP_JSLE_K: Signed jump: if (-1 <= -1) return 1 jited:1 315 PASS
+[  271.674204] test_bpf: #471 JMP_JSLE_K: Signed jump: value walk 1 jited:1 350 PASS
+[  271.676619] test_bpf: #472 JMP_JSLE_K: Signed jump: value walk 2 jited:1 358 PASS
+[  271.683717] test_bpf: #473 JMP_JSGE_K: Signed jump: if (-1 >= -2) return 1 jited:1 314 PASS
+[  271.685081] test_bpf: #474 JMP_JSGE_K: Signed jump: if (-1 >= -1) return 1 jited:1 314 PASS
+[  271.686380] test_bpf: #475 JMP_JSGE_K: Signed jump: value walk 1 jited:1 352 PASS
+[  271.691828] test_bpf: #476 JMP_JSGE_K: Signed jump: value walk 2 jited:1 553 PASS
+[  271.696055] test_bpf: #477 JMP_JGT_K: if (3 > 2) return 1 jited:1 323 PASS
+[  271.697339] test_bpf: #478 JMP_JGT_K: Unsigned jump: if (-1 > 1) return 1 jited:1 318 PASS
+[  271.698629] test_bpf: #479 JMP_JLT_K: if (2 < 3) return 1 jited:1 487 PASS
+[  271.703911] test_bpf: #480 JMP_JGT_K: Unsigned jump: if (1 < -1) return 1 jited:1 508 PASS
+[  271.708065] test_bpf: #481 JMP_JGE_K: if (3 >= 2) return 1 jited:1 314 PASS
+[  271.709315] test_bpf: #482 JMP_JLE_K: if (2 <= 3) return 1 jited:1 322 PASS
+[  271.710592] test_bpf: #483 JMP_JGT_K: if (3 > 2) return 1 (jump backwards) jited:1 495 PASS
+[  271.712965] test_bpf: #484 JMP_JGE_K: if (3 >= 3) return 1 jited:1 366 PASS
+[  271.720844] test_bpf: #485 JMP_JGT_K: if (2 < 3) return 1 (jump backwards) jited:1 325 PASS
+[  271.722181] test_bpf: #486 JMP_JLE_K: if (3 <= 3) return 1 jited:1 318 PASS
+[  271.727348] test_bpf: #487 JMP_JNE_K: if (3 != 2) return 1 jited:1 362 PASS
+[  271.731788] test_bpf: #488 JMP_JEQ_K: if (3 == 3) return 1 jited:1 312 PASS
+[  271.733022] test_bpf: #489 JMP_JSET_K: if (0x3 & 0x2) return 1 jited:1 314 PASS
+[  271.734276] test_bpf: #490 JMP_JSET_K: if (0x3 & 0xffffffff) return 1 jited:1 315 PASS
+[  271.735872] test_bpf: #491 JMP_JSGT_X: Signed jump: if (-1 > -2) return 1 jited:1 346 PASS
+[  271.737379] test_bpf: #492 JMP_JSGT_X: Signed jump: if (-1 > -1) return 0 jited:1 337 PASS
+[  271.738739] test_bpf: #493 JMP_JSLT_X: Signed jump: if (-2 < -1) return 1 jited:1 509 PASS
+[  271.743830] test_bpf: #494 JMP_JSLT_X: Signed jump: if (-1 < -1) return 0 jited:1 368 PASS
+[  271.748435] test_bpf: #495 JMP_JSGE_X: Signed jump: if (-1 >= -2) return 1 jited:1 327 PASS
+[  271.749780] test_bpf: #496 JMP_JSGE_X: Signed jump: if (-1 >= -1) return 1 jited:1 311 PASS
+[  271.751076] test_bpf: #497 JMP_JSLE_X: Signed jump: if (-2 <= -1) return 1 jited:1 319 PASS
+[  271.755767] test_bpf: #498 JMP_JSLE_X: Signed jump: if (-1 <= -1) return 1 jited:1 356 PASS
+[  271.760865] test_bpf: #499 JMP_JGT_X: if (3 > 2) return 1 jited:1 319 PASS
+[  271.762128] test_bpf: #500 JMP_JGT_X: Unsigned jump: if (-1 > 1) return 1 jited:1 312 PASS
+[  271.763418] test_bpf: #501 JMP_JLT_X: if (2 < 3) return 1 jited:1 336 PASS
+[  271.771201] test_bpf: #502 JMP_JLT_X: Unsigned jump: if (1 < -1) return 1 jited:1 375 PASS
+[  271.772823] test_bpf: #503 JMP_JGE_X: if (3 >= 2) return 1 jited:1 328 PASS
+[  271.774116] test_bpf: #504 JMP_JGE_X: if (3 >= 3) return 1 jited:1 312 PASS
+[  271.775340] test_bpf: #505 JMP_JLE_X: if (2 <= 3) return 1 jited:1 313 PASS
+[  271.779863] test_bpf: #506 JMP_JLE_X: if (3 <= 3) return 1 jited:1 372 PASS
+[  271.784741] test_bpf: #507 JMP_JGE_X: ldimm64 test 1 jited:1 322 PASS
+[  271.785994] test_bpf: #508 JMP_JGE_X: ldimm64 test 2 jited:1 312 PASS
+[  271.787237] test_bpf: #509 JMP_JGE_X: ldimm64 test 3 jited:1 318 PASS
+[  271.791843] test_bpf: #510 JMP_JLE_X: ldimm64 test 1 jited:1 348 PASS
+[  271.796609] test_bpf: #511 JMP_JLE_X: ldimm64 test 2 jited:1 322 PASS
+[  271.797827] test_bpf: #512 JMP_JLE_X: ldimm64 test 3 jited:1 311 PASS
+[  271.799067] test_bpf: #513 JMP_JNE_X: if (3 != 2) return 1 jited:1 318 PASS
+[  271.803795] test_bpf: #514 JMP_JEQ_X: if (3 == 3) return 1 jited:1 343 PASS
+[  271.808477] test_bpf: #515 JMP_JSET_X: if (0x3 & 0x2) return 1 jited:1 315 PASS
+[  271.809741] test_bpf: #516 JMP_JSET_X: if (0x3 & 0xffffffff) return 1 jited:1 321 PASS
+[  271.811032] test_bpf: #517 JMP_JA: Jump, gap, jump, ... jited:1 529 PASS
+[  271.828185] test_bpf: #518 BPF_MAXINSNS: Maximum possible literals jited:1 385 PASS
+[  271.859849] test_bpf: #519 BPF_MAXINSNS: Single literal jited:1 415 PASS
+[  271.895693] test_bpf: #520 BPF_MAXINSNS: Run/add until end jited:1 18914 PASS
+[  271.945514] test_bpf: #521 BPF_MAXINSNS: Too many instructions PASS
+[  271.946060] test_bpf: #522 BPF_MAXINSNS: Very long jump jited:1 428 PASS
+[  271.983712] test_bpf: #523 BPF_MAXINSNS: Ctx heavy transformations jited:1 108035 74428 PASS
+[  272.259969] test_bpf: #524 BPF_MAXINSNS: Call heavy transformations jited:1 971352 945356 PASS
+[  274.256114] test_bpf: #525 BPF_MAXINSNS: Jump heavy test jited:1 85618 PASS
+[  274.428270] test_bpf: #526 BPF_MAXINSNS: Very long jump backwards jited:1 491 PASS
+[  274.491856] test_bpf: #527 BPF_MAXINSNS: Edge hopping nuthouse jited:1 643044 PASS
+[  275.151794] test_bpf: #528 BPF_MAXINSNS: Jump, gap, jump, ... jited:1 1302 PASS
+[  275.176747] test_bpf: #529 BPF_MAXINSNS: jump over MSH PASS
+[  275.186185] test_bpf: #530 BPF_MAXINSNS: exec all MSH jited:1 198173 PASS
+[  276.036272] test_bpf: #531 BPF_MAXINSNS: ld_abs+get_processor_id jited:1 454731 PASS
+[  276.760078] test_bpf: #532 LD_IND byte frag jited:1 1085 PASS
+[  276.838955] test_bpf: #533 LD_IND halfword frag jited:1 941 PASS
+[  276.841227] test_bpf: #534 LD_IND word frag jited:1 935 PASS
+[  276.843196] test_bpf: #535 LD_IND halfword mixed head/frag jited:1 1170 PASS
+[  276.847706] test_bpf: #536 LD_IND word mixed head/frag jited:1 1216 PASS
+[  276.854985] test_bpf: #537 LD_ABS byte frag jited:1 883 PASS
+[  276.861092] test_bpf: #538 LD_ABS halfword frag jited:1 897 PASS
+[  276.869421] test_bpf: #539 LD_ABS word frag jited:1 923 PASS
+[  276.874223] test_bpf: #540 LD_ABS halfword mixed head/frag jited:1 1244 PASS
+[  276.876550] test_bpf: #541 LD_ABS word mixed head/frag jited:1 1091 PASS
+[  276.878601] test_bpf: #542 LD_IND byte default X jited:1 669 PASS
+[  276.883745] test_bpf: #543 LD_IND byte positive offset jited:1 775 PASS
+[  276.888489] test_bpf: #544 LD_IND byte negative offset jited:1 492 PASS
+[  276.889991] test_bpf: #545 LD_IND byte positive offset, all ff jited:1 495 PASS
+[  276.895105] test_bpf: #546 LD_IND byte positive offset, out of bounds jited:1 739 PASS
+[  276.903096] test_bpf: #547 LD_IND byte negative offset, out of bounds jited:1 638 PASS
+[  276.907800] test_bpf: #548 LD_IND byte negative offset, multiple calls jited:1 1311 PASS
+[  276.910281] test_bpf: #549 LD_IND halfword positive offset jited:1 690 PASS
+[  276.915536] test_bpf: #550 LD_IND halfword negative offset jited:1 689 PASS
+[  276.923064] test_bpf: #551 LD_IND halfword unaligned jited:1 529 PASS
+[  276.927554] test_bpf: #552 LD_IND halfword positive offset, all ff jited:1 481 PASS
+[  276.929069] test_bpf: #553 LD_IND halfword positive offset, out of bounds jited:1 697 PASS
+[  276.930762] test_bpf: #554 LD_IND halfword negative offset, out of bounds jited:1 603 PASS
+[  276.935747] test_bpf: #555 LD_IND word positive offset jited:1 742 PASS
+[  276.941608] test_bpf: #556 LD_IND word negative offset jited:1 643 PASS
+[  276.944680] test_bpf: #557 LD_IND word unaligned (addr & 3 == 2) jited:1 716 PASS
+[  276.952164] test_bpf: #558 LD_IND word unaligned (addr & 3 == 1) jited:1 534 PASS
+[  276.953767] test_bpf: #559 LD_IND word unaligned (addr & 3 == 3) jited:1 519 PASS
+[  276.959355] test_bpf: #560 LD_IND word positive offset, all ff jited:1 539 PASS
+[  276.963964] test_bpf: #561 LD_IND word positive offset, out of bounds jited:1 746 PASS
+[  276.965856] test_bpf: #562 LD_IND word negative offset, out of bounds jited:1 627 PASS
+[  276.967996] test_bpf: #563 LD_ABS byte jited:1 534 PASS
+[  276.975900] test_bpf: #564 LD_ABS byte positive offset, all ff jited:1 518 PASS
+[  276.977474] test_bpf: #565 LD_ABS byte positive offset, out of bounds jited:1 728 PASS
+[  276.979273] test_bpf: #566 LD_ABS byte negative offset, out of bounds load PASS
+[  276.983672] test_bpf: #567 LD_ABS byte negative offset, in bounds jited:1 844 PASS
+[  276.988576] test_bpf: #568 LD_ABS byte negative offset, out of bounds jited:1 634 PASS
+[  276.990337] test_bpf: #569 LD_ABS byte negative offset, multiple calls jited:1 1590 PASS
+[  276.995766] test_bpf: #570 LD_ABS halfword jited:1 567 PASS
+[  277.001373] test_bpf: #571 LD_ABS halfword unaligned jited:1 550 PASS
+[  277.002887] test_bpf: #572 LD_ABS halfword positive offset, all ff jited:1 519 PASS
+[  277.007773] test_bpf: #573 LD_ABS halfword positive offset, out of bounds jited:1 799 PASS
+[  277.013143] test_bpf: #574 LD_ABS halfword negative offset, out of bounds load PASS
+[  277.013827] test_bpf: #575 LD_ABS halfword negative offset, in bounds jited:1 650 PASS
+[  277.019528] test_bpf: #576 LD_ABS halfword negative offset, out of bounds jited:1 848 PASS
+[  277.027810] test_bpf: #577 LD_ABS word jited:1 742 PASS
+[  277.032332] test_bpf: #578 LD_ABS word unaligned (addr & 3 == 2) jited:1 537 PASS
+[  277.033884] test_bpf: #579 LD_ABS word unaligned (addr & 3 == 1) jited:1 525 PASS
+[  277.039255] test_bpf: #580 LD_ABS word unaligned (addr & 3 == 3) jited:1 532 PASS
+[  277.047058] test_bpf: #581 LD_ABS word positive offset, all ff jited:1 579 PASS
+[  277.051749] test_bpf: #582 LD_ABS word positive offset, out of bounds jited:1 718 PASS
+[  277.053526] test_bpf: #583 LD_ABS word negative offset, out of bounds load PASS
+[  277.054231] test_bpf: #584 LD_ABS word negative offset, in bounds jited:1 831 PASS
+[  277.059622] test_bpf: #585 LD_ABS word negative offset, out of bounds jited:1 644 PASS
+[  277.067933] test_bpf: #586 LDX_MSH standalone, preserved A jited:1 776 PASS
+[  277.072539] test_bpf: #587 LDX_MSH standalone, preserved A 2 jited:1 928 PASS
+[  277.074694] test_bpf: #588 LDX_MSH standalone, test result 1 jited:1 674 PASS
+[  277.079770] test_bpf: #589 LDX_MSH standalone, test result 2 jited:1 744 PASS
+[  277.084465] test_bpf: #590 LDX_MSH standalone, negative offset jited:1 626 PASS
+[  277.086183] test_bpf: #591 LDX_MSH standalone, negative offset 2 jited:1 800 PASS
+[  277.088882] test_bpf: #592 LDX_MSH standalone, out of bounds jited:1 1338 PASS
+[  277.097228] test_bpf: #593 ADD default X jited:1 333 PASS
+[  277.098695] test_bpf: #594 ADD default A jited:1 333 PASS
+[  277.103928] test_bpf: #595 SUB default X jited:1 509 PASS
+[  277.108092] test_bpf: #596 SUB default A jited:1 323 PASS
+[  277.109337] test_bpf: #597 MUL default X jited:1 329 PASS
+[  277.110545] test_bpf: #598 MUL default A jited:1 494 PASS
+[  277.115880] test_bpf: #599 DIV default X jited:1 420 PASS
+[  277.120760] test_bpf: #600 DIV default A jited:1 330 PASS
+[  277.122016] test_bpf: #601 MOD default X jited:1 615 PASS
+[  277.127558] test_bpf: #602 MOD default A jited:1 350 PASS
+[  277.135551] test_bpf: #603 JMP EQ default A jited:1 373 PASS
+[  277.141668] test_bpf: #604 JMP EQ default X jited:1 632 PASS
+[  277.143857] test_bpf: #605 JNE signed compare, test 1 jited:1 378 PASS
+[  277.151804] test_bpf: #606 JNE signed compare, test 2 jited:1 325 PASS
+[  277.153028] test_bpf: #607 JNE signed compare, test 3 jited:1 318 PASS
+[  277.154255] test_bpf: #608 JNE signed compare, test 4 jited:1 323 PASS
+[  277.156600] test_bpf: #609 JNE signed compare, test 5 jited:1 343 PASS
+[  277.163217] test_bpf: #610 JNE signed compare, test 6 jited:1 326 PASS
+[  277.164729] test_bpf: #611 JNE signed compare, test 7 jited:1 337 PASS
+[  277.166113] test_bpf: #612 LDX_MEM_B: operand register aliasing jited:1 301 PASS
+[  277.171428] test_bpf: #613 LDX_MEM_H: operand register aliasing jited:1 345 PASS
+[  277.178637] test_bpf: #614 LDX_MEM_W: operand register aliasing jited:1 344 PASS
+[  277.182779] test_bpf: #615 LDX_MEM_DW: operand register aliasing jited:1 308 PASS
+[  277.184284] test_bpf: #616 ALU64_IMM_AND to R8: no clobbering jited:1 448 PASS
+[  277.185753] test_bpf: #617 ALU64_IMM_AND to R9: no clobbering jited:1 408 PASS
+[  277.187216] test_bpf: #618 ALU64_IMM_OR to R8: no clobbering jited:1 438 PASS
+[  277.191732] test_bpf: #619 ALU64_IMM_OR to R9: no clobbering jited:1 459 PASS
+[  277.197295] test_bpf: #620 ALU64_IMM_XOR to R8: no clobbering jited:1 442 PASS
+[  277.198753] test_bpf: #621 ALU64_IMM_XOR to R9: no clobbering jited:1 560 PASS
+[  277.203764] test_bpf: #622 ALU64_IMM_LSH to R8: no clobbering jited:1 499 PASS
+[  277.209213] test_bpf: #623 ALU64_IMM_LSH to R9: no clobbering jited:1 694 PASS
+[  277.211255] test_bpf: #624 ALU64_IMM_RSH to R8: no clobbering jited:1 582 PASS
+[  277.215760] test_bpf: #625 ALU64_IMM_RSH to R9: no clobbering jited:1 452 PASS
+[  277.222159] test_bpf: #626 ALU64_IMM_ARSH to R8: no clobbering jited:1 441 PASS
+[  277.224026] test_bpf: #627 ALU64_IMM_ARSH to R9: no clobbering jited:1 432 PASS
+[  277.225516] test_bpf: #628 ALU64_IMM_ADD to R8: no clobbering jited:1 434 PASS
+[  277.226990] test_bpf: #629 ALU64_IMM_ADD to R9: no clobbering jited:1 438 PASS
+[  277.231732] test_bpf: #630 ALU64_IMM_SUB to R8: no clobbering jited:1 489 PASS
+[  277.237575] test_bpf: #631 ALU64_IMM_SUB to R9: no clobbering jited:1 407 PASS
+[  277.239271] test_bpf: #632 ALU64_IMM_MUL to R8: no clobbering jited:1 668 PASS
+[  277.243827] test_bpf: #633 ALU64_IMM_MUL to R9: no clobbering jited:1 462 PASS
+[  277.249557] test_bpf: #634 ALU64_IMM_DIV to R8: no clobbering jited:1 409 PASS
+[  277.250950] test_bpf: #635 ALU64_IMM_DIV to R9: no clobbering jited:1 416 PASS
+[  277.255779] test_bpf: #636 ALU64_IMM_MOD to R8: no clobbering jited:1 495 PASS
+[  277.260506] test_bpf: #637 ALU64_IMM_MOD to R9: no clobbering jited:1 435 PASS
+[  277.262074] test_bpf: #638 ALU32_IMM_AND to R8: no clobbering jited:1 449 PASS
+[  277.264662] test_bpf: #639 ALU32_IMM_AND to R9: no clobbering jited:1 687 PASS
+[  277.272171] test_bpf: #640 ALU32_IMM_OR to R8: no clobbering jited:1 445 PASS
+[  277.273668] test_bpf: #641 ALU32_IMM_OR to R9: no clobbering jited:1 432 PASS
+[  277.275134] test_bpf: #642 ALU32_IMM_XOR to R8: no clobbering jited:1 442 PASS
+[  277.279760] test_bpf: #643 ALU32_IMM_XOR to R9: no clobbering jited:1 490 PASS
+[  277.285427] test_bpf: #644 ALU32_IMM_LSH to R8: no clobbering jited:1 435 PASS
+[  277.286961] test_bpf: #645 ALU32_IMM_LSH to R9: no clobbering jited:1 442 PASS
+[  277.291780] test_bpf: #646 ALU32_IMM_RSH to R8: no clobbering jited:1 484 PASS
+[  277.296847] test_bpf: #647 ALU32_IMM_RSH to R9: no clobbering jited:1 432 PASS
+[  277.298418] test_bpf: #648 ALU32_IMM_ARSH to R8: no clobbering jited:1 605 PASS
+[  277.303783] test_bpf: #649 ALU32_IMM_ARSH to R9: no clobbering jited:1 647 PASS
+[  277.308299] test_bpf: #650 ALU32_IMM_ADD to R8: no clobbering jited:1 445 PASS
+[  277.309753] test_bpf: #651 ALU32_IMM_ADD to R9: no clobbering jited:1 438 PASS
+[  277.311237] test_bpf: #652 ALU32_IMM_SUB to R8: no clobbering jited:1 435 PASS
+[  277.315721] test_bpf: #653 ALU32_IMM_SUB to R9: no clobbering jited:1 443 PASS
+[  277.320982] test_bpf: #654 ALU32_IMM_MUL to R8: no clobbering jited:1 447 PASS
+[  277.322500] test_bpf: #655 ALU32_IMM_MUL to R9: no clobbering jited:1 619 PASS
+[  277.324935] test_bpf: #656 ALU32_IMM_DIV to R8: no clobbering jited:1 620 PASS
+[  277.332189] test_bpf: #657 ALU32_IMM_DIV to R9: no clobbering jited:1 411 PASS
+[  277.333579] test_bpf: #658 ALU32_IMM_MOD to R8: no clobbering jited:1 406 PASS
+[  277.334958] test_bpf: #659 ALU32_IMM_MOD to R9: no clobbering jited:1 412 PASS
+[  277.339725] test_bpf: #660 ALU64_REG_AND to R8: no clobbering jited:1 448 PASS
+[  277.344532] test_bpf: #661 ALU64_REG_AND to R9: no clobbering jited:1 447 PASS
+[  277.346006] test_bpf: #662 ALU64_REG_OR to R8: no clobbering jited:1 441 PASS
+[  277.351563] test_bpf: #663 ALU64_REG_OR to R9: no clobbering jited:1 614 PASS
+[  277.359234] test_bpf: #664 ALU64_REG_XOR to R8: no clobbering jited:1 441 PASS
+[  277.363871] test_bpf: #665 ALU64_REG_XOR to R9: no clobbering jited:1 437 PASS
+[  277.365403] test_bpf: #666 ALU64_REG_LSH to R8: no clobbering jited:1 437 PASS
+[  277.366873] test_bpf: #667 ALU64_REG_LSH to R9: no clobbering jited:1 438 PASS
+[  277.371555] test_bpf: #668 ALU64_REG_RSH to R8: no clobbering jited:1 440 PASS
+[  277.379803] test_bpf: #669 ALU64_REG_RSH to R9: no clobbering jited:1 458 PASS
+[  277.384646] test_bpf: #670 ALU64_REG_ARSH to R8: no clobbering jited:1 401 PASS
+[  277.385982] test_bpf: #671 ALU64_REG_ARSH to R9: no clobbering jited:1 408 PASS
+[  277.387361] test_bpf: #672 ALU64_REG_ADD to R8: no clobbering jited:1 447 PASS
+[  277.395527] test_bpf: #673 ALU64_REG_ADD to R9: no clobbering jited:1 408 PASS
+[  277.396922] test_bpf: #674 ALU64_REG_SUB to R8: no clobbering jited:1 404 PASS
+[  277.398312] test_bpf: #675 ALU64_REG_SUB to R9: no clobbering jited:1 408 PASS
+[  277.403992] test_bpf: #676 ALU64_REG_MUL to R8: no clobbering jited:1 617 PASS
+[  277.408155] test_bpf: #677 ALU64_REG_MUL to R9: no clobbering jited:1 406 PASS
+[  277.409562] test_bpf: #678 ALU64_REG_DIV to R8: no clobbering jited:1 400 PASS
+[  277.410929] test_bpf: #679 ALU64_REG_DIV to R9: no clobbering jited:1 409 PASS
+[  277.415803] test_bpf: #680 ALU64_REG_MOD to R8: no clobbering jited:1 456 PASS
+[  277.420776] test_bpf: #681 ALU64_REG_MOD to R9: no clobbering jited:1 403 PASS
+[  277.422144] test_bpf: #682 ALU32_REG_AND to R8: no clobbering jited:1 403 PASS
+[  277.424570] test_bpf: #683 ALU32_REG_AND to R9: no clobbering jited:1 443 PASS
+[  277.431531] test_bpf: #684 ALU32_REG_OR to R8: no clobbering jited:1 432 PASS
+[  277.433043] test_bpf: #685 ALU32_REG_OR to R9: no clobbering jited:1 436 PASS
+[  277.434478] test_bpf: #686 ALU32_REG_XOR to R8: no clobbering jited:1 616 PASS
+[  277.439976] test_bpf: #687 ALU32_REG_XOR to R9: no clobbering jited:1 616 PASS
+[  277.444249] test_bpf: #688 ALU32_REG_LSH to R8: no clobbering jited:1 446 PASS
+[  277.445753] test_bpf: #689 ALU32_REG_LSH to R9: no clobbering jited:1 435 PASS
+[  277.447215] test_bpf: #690 ALU32_REG_RSH to R8: no clobbering jited:1 433 PASS
+[  277.451741] test_bpf: #691 ALU32_REG_RSH to R9: no clobbering jited:1 444 PASS
+[  277.457108] test_bpf: #692 ALU32_REG_ARSH to R8: no clobbering jited:1 439 PASS
+[  277.458609] test_bpf: #693 ALU32_REG_ARSH to R9: no clobbering jited:1 612 PASS
+[  277.463875] test_bpf: #694 ALU32_REG_ADD to R8: no clobbering jited:1 607 PASS
+[  277.468358] test_bpf: #695 ALU32_REG_ADD to R9: no clobbering jited:1 446 PASS
+[  277.469795] test_bpf: #696 ALU32_REG_SUB to R8: no clobbering jited:1 429 PASS
+[  277.471265] test_bpf: #697 ALU32_REG_SUB to R9: no clobbering jited:1 438 PASS
+[  277.475755] test_bpf: #698 ALU32_REG_MUL to R8: no clobbering jited:1 444 PASS
+[  277.481280] test_bpf: #699 ALU32_REG_MUL to R9: no clobbering jited:1 438 PASS
+[  277.482740] test_bpf: #700 ALU32_REG_DIV to R8: no clobbering jited:1 609 PASS
+[  277.487894] test_bpf: #701 ALU32_REG_DIV to R9: no clobbering jited:1 615 PASS
+[  277.492375] test_bpf: #702 ALU32_REG_MOD to R8: no clobbering jited:1 446 PASS
+[  277.493852] test_bpf: #703 ALU32_REG_MOD to R9: no clobbering jited:1 431 PASS
+[  277.495294] test_bpf: #704 Atomic_BPF_DW BPF_ADD: no clobbering jited:1 486 PASS
+[  277.503597] test_bpf: #705 Atomic_BPF_DW BPF_AND: no clobbering jited:1 465 PASS
+[  277.505090] test_bpf: #706 Atomic_BPF_DW BPF_OR: no clobbering jited:1 473 PASS
+[  277.506551] test_bpf: #707 Atomic_BPF_DW BPF_XOR: no clobbering jited:1 648 PASS
+[  277.511864] test_bpf: #708 Atomic_BPF_DW BPF_ADD | BPF_FETCH: no clobbering jited:1 491 PASS
+[  277.516483] test_bpf: #709 Atomic_BPF_DW BPF_AND | BPF_FETCH: no clobbering jited:1 466 PASS
+[  277.518028] test_bpf: #710 Atomic_BPF_DW BPF_OR | BPF_FETCH: no clobbering jited:1 477 PASS
+[  277.523823] test_bpf: #711 Atomic_BPF_DW BPF_XOR | BPF_FETCH: no clobbering jited:1 758 PASS
+[  277.528423] test_bpf: #712 Atomic_BPF_DW BPF_XCHG: no clobbering jited:1 488 PASS
+[  277.529960] test_bpf: #713 Atomic_BPF_DW BPF_CMPXCHG: no clobbering jited:1 494 PASS
+[  277.532742] test_bpf: #714 Atomic_BPF_W BPF_ADD: no clobbering jited:1 486 PASS
+[  277.539962] test_bpf: #715 Atomic_BPF_W BPF_AND: no clobbering jited:1 481 PASS
+[  277.541538] test_bpf: #716 Atomic_BPF_W BPF_OR: no clobbering jited:1 468 PASS
+[  277.543023] test_bpf: #717 Atomic_BPF_W BPF_XOR: no clobbering jited:1 481 PASS
+[  277.547736] test_bpf: #718 Atomic_BPF_W BPF_ADD | BPF_FETCH: no clobbering jited:1 490 PASS
+[  277.552987] test_bpf: #719 Atomic_BPF_W BPF_AND | BPF_FETCH: no clobbering jited:1 474 PASS
+[  277.554553] test_bpf: #720 Atomic_BPF_W BPF_OR | BPF_FETCH: no clobbering jited:1 648 PASS
+[  277.559839] test_bpf: #721 Atomic_BPF_W BPF_XOR | BPF_FETCH: no clobbering jited:1 646 PASS
+[  277.564360] test_bpf: #722 Atomic_BPF_W BPF_XCHG: no clobbering jited:1 483 PASS
+[  277.565875] test_bpf: #723 Atomic_BPF_W BPF_CMPXCHG: no clobbering jited:1 516 PASS
+[  277.568655] test_bpf: #724 ALU32_MOV_X: src preserved in zext jited:1 346 PASS
+[  277.575568] test_bpf: #725 ALU32_AND_X: src preserved in zext jited:1 324 PASS
+[  277.576863] test_bpf: #726 ALU32_OR_X: src preserved in zext jited:1 312 PASS
+[  277.578131] test_bpf: #727 ALU32_XOR_X: src preserved in zext jited:1 310 PASS
+[  277.583118] test_bpf: #728 ALU32_ADD_X: src preserved in zext jited:1 381 PASS
+[  277.588136] test_bpf: #729 ALU32_SUB_X: src preserved in zext jited:1 369 PASS
+[  277.594897] test_bpf: #730 ALU32_MUL_X: src preserved in zext jited:1 329 PASS
+[  277.596409] test_bpf: #731 ALU32_DIV_X: src preserved in zext jited:1 334 PASS
+[  277.597705] test_bpf: #732 ALU32_MOD_X: src preserved in zext jited:1 324 PASS
+[  277.598974] test_bpf: #733 ATOMIC_W_ADD: src preserved in zext jited:1 352 PASS
+[  277.603883] test_bpf: #734 ATOMIC_W_AND: src preserved in zext jited:1 398 PASS
+[  277.608748] test_bpf: #735 ATOMIC_W_OR: src preserved in zext jited:1 345 PASS
+[  277.610050] test_bpf: #736 ATOMIC_W_XOR: src preserved in zext jited:1 341 PASS
+[  277.611341] test_bpf: #737 ATOMIC_W_CMPXCHG: src preserved in zext jited:1 361 PASS
+[  277.619279] test_bpf: #738 JMP32_JEQ_K: operand preserved in zext jited:1 333 PASS
+[  277.620772] test_bpf: #739 JMP32_JNE_K: operand preserved in zext jited:1 319 PASS
+[  277.622063] test_bpf: #740 JMP32_JSET_K: operand preserved in zext jited:1 318 PASS
+[  277.623348] test_bpf: #741 JMP32_JGT_K: operand preserved in zext jited:1 376 PASS
+[  277.631736] test_bpf: #742 JMP32_JGE_K: operand preserved in zext jited:1 327 PASS
+[  277.633062] test_bpf: #743 JMP32_JLT_K: operand preserved in zext jited:1 326 PASS
+[  277.634386] test_bpf: #744 JMP32_JLE_K: operand preserved in zext jited:1 346 PASS
+[  277.635980] test_bpf: #745 JMP32_JSGT_K: operand preserved in zext jited:1 371 PASS
+[  277.637521] test_bpf: #746 JMP32_JSGE_K: operand preserved in zext jited:1 303 PASS
+[  277.638787] test_bpf: #747 JMP32_JSGT_K: operand preserved in zext jited:1 517 PASS
+[  277.643681] test_bpf: #748 JMP32_JSLT_K: operand preserved in zext jited:1 351 PASS
+[  277.651639] test_bpf: #749 JMP32_JSLE_K: operand preserved in zext jited:1 500 PASS
+[  277.659267] test_bpf: #750 JMP32_JEQ_X: operands preserved in zext jited:1 349 PASS
+[  277.663555] test_bpf: #751 JMP32_JNE_X: operands preserved in zext jited:1 306 PASS
+[  277.664797] test_bpf: #752 JMP32_JSET_X: operands preserved in zext jited:1 311 PASS
+[  277.666058] test_bpf: #753 JMP32_JGT_X: operands preserved in zext jited:1 309 PASS
+[  277.667319] test_bpf: #754 JMP32_JGE_X: operands preserved in zext jited:1 359 PASS
+[  277.669231] test_bpf: #755 JMP32_JLT_X: operands preserved in zext jited:1 316 PASS
+[  277.670518] test_bpf: #756 JMP32_JLE_X: operands preserved in zext jited:1 497 PASS
+[  277.675633] test_bpf: #757 JMP32_JSGT_X: operands preserved in zext jited:1 521 PASS
+[  277.683238] test_bpf: #758 JMP32_JSGE_X: operands preserved in zext jited:1 351 PASS
+[  277.687786] test_bpf: #759 JMP32_JSGT_X: operands preserved in zext jited:1 362 PASS
+[  277.694678] test_bpf: #760 JMP32_JSLT_X: operands preserved in zext jited:1 473 PASS
+[  277.696088] test_bpf: #761 JMP32_JSLE_X: operands preserved in zext jited:1 302 PASS
+[  277.697341] test_bpf: #762 ALU64_MOV_K: registers jited:1 548 PASS
+[  277.703958] test_bpf: #763 ALU64_AND_K: registers jited:1 593 PASS
+[  277.708645] test_bpf: #764 ALU64_OR_K: registers jited:1 574 PASS
+[  277.710719] test_bpf: #765 ALU64_XOR_K: registers jited:1 555 PASS
+[  277.715736] test_bpf: #766 ALU64_LSH_K: registers jited:1 604 PASS
+[  277.721617] test_bpf: #767 ALU64_RSH_K: registers jited:1 717 PASS
+[  277.727627] test_bpf: #768 ALU64_ARSH_K: registers jited:1 603 PASS
+[  277.735888] test_bpf: #769 ALU64_ADD_K: registers jited:1 612 PASS
+[  277.740780] test_bpf: #770 ALU64_SUB_K: registers jited:1 565 PASS
+[  277.742902] test_bpf: #771 ALU64_MUL_K: registers jited:1 557 PASS
+[  277.747800] test_bpf: #772 ALU64_DIV_K: registers jited:1 712 PASS
+[  277.754068] test_bpf: #773 ALU64_MOD_K: registers jited:1 843 PASS
+[  277.756407] test_bpf: #774 ALU32_MOV_K: registers jited:1 524 PASS
+[  277.758435] test_bpf: #775 ALU32_AND_K: registers jited:1 534 PASS
+[  277.763733] test_bpf: #776 ALU32_OR_K: registers jited:1 585 PASS
+[  277.769453] test_bpf: #777 ALU32_XOR_K: registers jited:1 549 PASS
+[  277.772288] test_bpf: #778 ALU32_LSH_K: registers jited:1 569 PASS
+[  277.779609] test_bpf: #779 ALU32_RSH_K: registers jited:1 547 PASS
+[  277.781526] test_bpf: #780 ALU32_ARSH_K: registers jited:1 534 PASS
+[  277.787878] test_bpf: #781 ALU32_ADD_K: registers jited:1 578 PASS
+[  277.792609] test_bpf: #782 ALU32_SUB_K: registers jited:1 542 PASS
+[  277.794539] test_bpf: #783 ALU32_MUL_K: registers jited:1 544 PASS
+[  277.799755] test_bpf: #784 ALU32_DIV_K: registers jited:1 719 PASS
+[  277.805333] test_bpf: #785 ALU32_MOD_K: registers jited:1 666 PASS
+[  277.808382] test_bpf: #786 ALU64_MOV_X: register combinations jited:1 3461 PASS
+[  277.821441] test_bpf: #787 ALU64_AND_X: register combinations jited:1 3162 PASS
+[  277.831915] test_bpf: #788 ALU64_OR_X: register combinations jited:1 3384 PASS
+[  277.848720] test_bpf: #789 ALU64_XOR_X: register combinations jited:1 3525 PASS
+[  277.859807] test_bpf: #790 ALU64_LSH_X: register combinations jited:1 3014 PASS
+[  277.876383] test_bpf: #791 ALU64_RSH_X: register combinations jited:1 3024 PASS
+[  277.887942] test_bpf: #792 ALU64_ARSH_X: register combinations jited:1 3171 PASS
+[  277.902715] test_bpf: #793 ALU64_ADD_X: register combinations jited:1 3518 PASS
+[  277.915850] test_bpf: #794 ALU64_SUB_X: register combinations jited:1 3429 PASS
+[  277.930460] test_bpf: #795 ALU64_MUL_X: register combinations jited:1 3358 PASS
+[  277.943733] test_bpf: #796 ALU64_DIV_X: register combinations jited:1 4462 PASS
+[  277.958848] test_bpf: #797 ALU64_MOD_X: register combinations jited:1 4717 PASS
+[  277.971833] test_bpf: #798 ALU32_MOV_X: register combinations jited:1 2664 PASS
+[  277.986919] test_bpf: #799 ALU32_AND_X: register combinations jited:1 2579 PASS
+[  277.996202] test_bpf: #800 ALU32_OR_X: register combinations jited:1 2804 PASS
+[  278.012031] test_bpf: #801 ALU32_XOR_X: register combinations jited:1 2785 PASS
+[  278.029167] test_bpf: #802 ALU32_LSH_X: register combinations jited:1 2614 PASS
+[  278.043775] test_bpf: #803 ALU32_RSH_X: register combinations jited:1 2565 PASS
+[  278.054654] test_bpf: #804 ALU32_ARSH_X: register combinations jited:1 2661 PASS
+[  278.063822] test_bpf: #805 ALU32_ADD_X: register combinations jited:1 2626 PASS
+[  278.079631] test_bpf: #806 ALU32_SUB_X: register combinations jited:1 2842 PASS
+[  278.091699] test_bpf: #807 ALU32_MUL_X: register combinations jited:1 2731 PASS
+[  278.104825] test_bpf: #808 ALU32_DIV_X: register combinations jited:1 4039 PASS
+[  278.115886] test_bpf: #809 ALU32_MOD_X register combinations jited:1 4059 PASS
+[  278.132727] test_bpf: #810 ALU64_LSH_K: all shift values jited:1 6858 PASS
+[  278.148319] test_bpf: #811 ALU64_RSH_K: all shift values jited:1 3545 PASS
+[  278.168603] test_bpf: #812 ALU64_ARSH_K: all shift values jited:1 3084 PASS
+[  278.180225] test_bpf: #813 ALU64_LSH_X: all shift values jited:1 3461 PASS
+[  278.199106] test_bpf: #814 ALU64_RSH_X: all shift values jited:1 3445 PASS
+[  278.219600] test_bpf: #815 ALU64_ARSH_X: all shift values jited:1 3309 PASS
+[  278.235934] test_bpf: #816 ALU32_LSH_K: all shift values jited:1 1903 PASS
+[  278.245314] test_bpf: #817 ALU32_RSH_K: all shift values jited:1 1750 PASS
+[  278.252069] test_bpf: #818 ALU32_ARSH_K: all shift values jited:1 1821 PASS
+[  278.266013] test_bpf: #819 ALU32_LSH_X: all shift values jited:1 2061 PASS
+[  278.276199] test_bpf: #820 ALU32_RSH_X: all shift values jited:1 2015 PASS
+[  278.285570] test_bpf: #821 ALU32_ARSH_X: all shift values jited:1 2221 PASS
+[  278.296034] test_bpf: #822 ALU64_LSH_X: all shift values with the same register jited:1 844 PASS
+[  278.304843] test_bpf: #823 ALU64_RSH_X: all shift values with the same register jited:1 935 PASS
+[  278.311719] test_bpf: #824 ALU64_ARSH_X: all shift values with the same register jited:1 3600 PASS
+[  278.320923] test_bpf: #825 ALU32_LSH_X: all shift values with the same register jited:1 586 PASS
+[  278.327532] test_bpf: #826 ALU32_RSH_X: all shift values with the same register jited:1 596 PASS
+[  278.333758] test_bpf: #827 ALU32_ARSH_X: all shift values with the same register jited:1 708 PASS
+[  278.336298] test_bpf: #828 ALU64_MOV_K: all immediate value magnitudes jited:1 97217600 PASS
+[  279.272034] test_bpf: #829 ALU64_AND_K: all immediate value magnitudes jited:1 101233200 PASS
+[  280.263942] test_bpf: #830 ALU64_OR_K: all immediate value magnitudes jited:1 164116200 PASS
+[  281.372140] test_bpf: #831 ALU64_XOR_K: all immediate value magnitudes jited:1 113639200 PASS
+[  282.431143] test_bpf: #832 ALU64_ADD_K: all immediate value magnitudes jited:1 115972400 PASS
+[  283.501819] test_bpf: #833 ALU64_SUB_K: all immediate value magnitudes jited:1 111069500 PASS
+[  284.548036] test_bpf: #834 ALU64_MUL_K: all immediate value magnitudes jited:1 111727500 PASS
+[  285.600036] test_bpf: #835 ALU64_DIV_K: all immediate value magnitudes jited:1 144320300 PASS
+[  286.680024] test_bpf: #836 ALU64_MOD_K: all immediate value magnitudes jited:1 136648300 PASS
+[  287.720055] test_bpf: #837 ALU32_MOV_K: all immediate value magnitudes jited:1 119372600 PASS
+[  288.814641] test_bpf: #838 ALU32_AND_K: all immediate value magnitudes jited:1 117679600 PASS
+[  289.885456] test_bpf: #839 ALU32_OR_K: all immediate value magnitudes jited:1 122681500 PASS
+[  291.002092] test_bpf: #840 ALU32_XOR_K: all immediate value magnitudes jited:1 124456700 PASS
+[  292.085593] test_bpf: #841 ALU32_ADD_K: all immediate value magnitudes jited:1 126237500 PASS
+[  293.197958] test_bpf: #842 ALU32_SUB_K: all immediate value magnitudes jited:1 169878600 PASS
+[  294.340091] test_bpf: #843 ALU32_MUL_K: all immediate value magnitudes jited:1 121817800 PASS
+[  295.430542] test_bpf: #844 ALU32_DIV_K: all immediate value magnitudes jited:1 154956800 PASS
+[  296.514107] test_bpf: #845 ALU32_MOD_K: all immediate value magnitudes jited:1 340017300 PASS
+[  297.800184] test_bpf: #846 ALU64_MOV_X: all register value magnitudes jited:1 166750400 PASS
+[  300.220119] test_bpf: #847 ALU64_AND_X: all register value magnitudes jited:1 164963200 PASS
+[  302.716494] test_bpf: #848 ALU64_OR_X: all register value magnitudes jited:1 174124600 PASS
+[  305.232152] test_bpf: #849 ALU64_XOR_X: all register value magnitudes jited:1 175693900 PASS
+[  307.769959] test_bpf: #850 ALU64_ADD_X: all register value magnitudes jited:1 189893900 PASS
+[  310.304132] test_bpf: #851 ALU64_SUB_X: all register value magnitudes jited:1 180866300 PASS
+[  312.903013] test_bpf: #852 ALU64_MUL_X: all register value magnitudes jited:1 193489800 PASS
+[  315.468027] test_bpf: #853 ALU64_DIV_X: all register value magnitudes jited:1 227867400 PASS
+[  318.059944] test_bpf: #854 ALU64_MOD_X: all register value magnitudes jited:1 301778600 PASS
+[  320.751947] test_bpf: #855 ALU32_MOV_X: all register value magnitudes jited:1 184111200 PASS
+[  323.359937] test_bpf: #856 ALU32_AND_X: all register value magnitudes jited:1 174996000 PASS
+[  325.896053] test_bpf: #857 ALU32_OR_X: all register value magnitudes jited:1 194940800 PASS
+[  328.560084] test_bpf: #858 ALU32_XOR_X: all register value magnitudes jited:1 189010800 PASS
+[  331.154293] test_bpf: #859 ALU32_ADD_X: all register value magnitudes jited:1 188027900 PASS
+[  333.720026] test_bpf: #860 ALU32_SUB_X: all register value magnitudes jited:1 207500600 PASS
+[  336.343907] test_bpf: #861 ALU32_MUL_X: all register value magnitudes jited:1 216274400 PASS
+[  339.021212] test_bpf: #862 ALU32_DIV_X: all register value magnitudes jited:1 158978900 PASS
+[  340.279841] test_bpf: #863 ALU32_MOD_X: all register value magnitudes jited:1 159735700 PASS
+[  341.498902] test_bpf: #864 LD_IMM64: all immediate value magnitudes jited:1 186017 PASS
+[  342.167963] test_bpf: #865 LD_IMM64: checker byte patterns jited:1 3533 PASS
+[  342.433950] test_bpf: #866 LD_IMM64: random positive and zero byte patterns jited:1 3660 PASS
+[  342.447896] test_bpf: #867 LD_IMM64: random negative and zero byte patterns jited:1 3471 PASS
+[  342.472025] test_bpf: #868 LD_IMM64: random positive and negative byte patterns jited:1 3451 PASS
+[  342.492090] test_bpf: #869 ATOMIC_DW_ADD: register combinations jited:1 9398 PASS
+[  342.524363] test_bpf: #870 ATOMIC_DW_AND: register combinations jited:1 9901 PASS
+[  342.552227] test_bpf: #871 ATOMIC_DW_OR: register combinations jited:1 10030 PASS
+[  342.579959] test_bpf: #872 ATOMIC_DW_XOR: register combinations jited:1 9864 PASS
+[  342.611960] test_bpf: #873 ATOMIC_DW_ADD_FETCH: register combinations jited:1 10225 PASS
+[  342.653827] test_bpf: #874 ATOMIC_DW_AND_FETCH: register combinations jited:1 10098 PASS
+[  342.683949] test_bpf: #875 ATOMIC_DW_OR_FETCH: register combinations jited:1 10233 PASS
+[  342.712424] test_bpf: #876 ATOMIC_DW_XOR_FETCH: register combinations jited:1 10086 PASS
+[  342.739913] test_bpf: #877 ATOMIC_DW_XCHG: register combinations jited:1 111930 PASS
+[  342.875773] test_bpf: #878 ATOMIC_DW_CMPXCHG: register combinations jited:1 10285 PASS
+[  342.919221] test_bpf: #879 ATOMIC_W_ADD: register combinations jited:1 8507 PASS
+[  342.944137] test_bpf: #880 ATOMIC_W_AND: register combinations jited:1 8918 PASS
+[  342.971170] test_bpf: #881 ATOMIC_W_OR: register combinations jited:1 9292 PASS
+[  342.995946] test_bpf: #882 ATOMIC_W_XOR: register combinations jited:1 9691 PASS
+[  343.028344] test_bpf: #883 ATOMIC_W_ADD_FETCH: register combinations jited:1 9640 PASS
+[  343.059858] test_bpf: #884 ATOMIC_W_AND_FETCH: register combinations jited:1 9571 PASS
+[  343.087030] test_bpf: #885 ATOMIC_W_OR_FETCH: register combinations jited:1 9506 PASS
+[  343.112057] test_bpf: #886 ATOMIC_W_XOR_FETCH: register combinations jited:1 8778 PASS
+[  343.146401] test_bpf: #887 ATOMIC_W_XCHG: register combinations jited:1 8700 PASS
+[  343.184785] test_bpf: #888 ATOMIC_W_CMPXCHG: register combinations jited:1 9264 PASS
+[  343.211980] test_bpf: #889 ATOMIC_DW_ADD: all operand magnitudes jited:1 216919000 PASS
+[  345.067919] test_bpf: #890 ATOMIC_DW_AND: all operand magnitudes jited:1 209080700 PASS
+[  346.936020] test_bpf: #891 ATOMIC_DW_OR: all operand magnitudes jited:1 210556100 PASS
+[  348.815875] test_bpf: #892 ATOMIC_DW_XOR: all operand magnitudes jited:1 214505100 PASS
+[  350.705129] test_bpf: #893 ATOMIC_DW_ADD_FETCH: all operand magnitudes jited:1 211846500 PASS
+[  352.655304] test_bpf: #894 ATOMIC_DW_AND_FETCH: all operand magnitudes jited:1 235488600 PASS
+[  354.553092] test_bpf: #895 ATOMIC_DW_OR_FETCH: all operand magnitudes jited:1 213123700 PASS
+[  356.664439] test_bpf: #896 ATOMIC_DW_XOR_FETCH: all operand magnitudes jited:1 222254700 PASS
+[  358.558111] test_bpf: #897 ATOMIC_DW_XCHG: all operand magnitudes jited:1 225100200 PASS
+[  360.452120] test_bpf: #898 ATOMIC_DW_CMPXCHG: all operand magnitudes jited:1 391777300 PASS
+[  363.164675] test_bpf: #899 ATOMIC_W_ADD: all operand magnitudes jited:1 219630900 PASS
+[  365.214643] test_bpf: #900 ATOMIC_W_AND: all operand magnitudes jited:1 213882400 PASS
+[  367.008780] test_bpf: #901 ATOMIC_W_OR: all operand magnitudes jited:1 232673700 PASS
+[  368.961696] test_bpf: #902 ATOMIC_W_XOR: all operand magnitudes jited:1 228433300 PASS
+[  370.870440] test_bpf: #903 ATOMIC_W_ADD_FETCH: all operand magnitudes jited:1 332750200 PASS
+[  372.891669] test_bpf: #904 ATOMIC_W_AND_FETCH: all operand magnitudes jited:1 214685900 PASS
+[  374.802813] test_bpf: #905 ATOMIC_W_OR_FETCH: all operand magnitudes jited:1 226173300 PASS
+[  376.720519] test_bpf: #906 ATOMIC_W_XOR_FETCH: all operand magnitudes jited:1 222585900 PASS
+[  378.694358] test_bpf: #907 ATOMIC_W_XCHG: all operand magnitudes jited:1 214339800 PASS
+[  380.581367] test_bpf: #908 ATOMIC_W_CMPXCHG: all operand magnitudes jited:1 472596500 PASS
+[  384.352049] test_bpf: #909 JMP_JSET_K: all immediate value magnitudes jited:1 136313000 PASS
+[  385.404032] test_bpf: #910 JMP_JEQ_K: all immediate value magnitudes jited:1 309400400 PASS
+[  386.714500] test_bpf: #911 JMP_JNE_K: all immediate value magnitudes jited:1 109678900 PASS
+[  387.665058] test_bpf: #912 JMP_JGT_K: all immediate value magnitudes jited:1 148755000 PASS
+[  388.719539] test_bpf: #913 JMP_JGE_K: all immediate value magnitudes jited:1 146625300 PASS
+[  389.774820] test_bpf: #914 JMP_JLT_K: all immediate value magnitudes jited:1 142375400 PASS
+[  390.849671] test_bpf: #915 JMP_JLE_K: all immediate value magnitudes jited:1 142743600 PASS
+[  391.904346] test_bpf: #916 JMP_JSGT_K: all immediate value magnitudes jited:1 155412700 PASS
+[  392.980367] test_bpf: #917 JMP_JSGE_K: all immediate value magnitudes jited:1 173862400 PASS
+[  394.064135] test_bpf: #918 JMP_JSLT_K: all immediate value magnitudes jited:1 144050900 PASS
+[  395.120928] test_bpf: #919 JMP_JSLE_K: all immediate value magnitudes jited:1 139695600 PASS
+[  396.172073] test_bpf: #920 JMP_JSET_X: all register value magnitudes jited:1 196016700 PASS
+[  398.218481] test_bpf: #921 JMP_JEQ_X: all register value magnitudes jited:1 272575200 PASS
+[  400.425467] test_bpf: #922 JMP_JNE_X: all register value magnitudes jited:1 149221900 PASS
+[  402.204230] test_bpf: #923 JMP_JGT_X: all register value magnitudes jited:1 206279300 PASS
+[  404.240358] test_bpf: #924 JMP_JGE_X: all register value magnitudes jited:1 195627600 PASS
+[  406.134258] test_bpf: #925 JMP_JLT_X: all register value magnitudes jited:1 233892400 PASS
+[  408.296128] test_bpf: #926 JMP_JLE_X: all register value magnitudes jited:1 193491000 PASS
+[  410.220294] test_bpf: #927 JMP_JSGT_X: all register value magnitudes jited:1 202181500 PASS
+[  412.304184] test_bpf: #928 JMP_JSGE_X: all register value magnitudes jited:1 212421100 PASS
+[  414.310408] test_bpf: #929 JMP_JSLT_X: all register value magnitudes jited:1 213351200 PASS
+[  416.336155] test_bpf: #930 JMP_JSLE_X: all register value magnitudes jited:1 207490800 PASS
+[  418.350305] test_bpf: #931 JMP32_JSET_K: all immediate value magnitudes jited:1 140219500 PASS
+[  419.223935] test_bpf: #932 JMP32_JEQ_K: all immediate value magnitudes jited:1 211375500 PASS
+[  420.280014] test_bpf: #933 JMP32_JNE_K: all immediate value magnitudes jited:1 117111800 PASS
+[  421.083878] test_bpf: #934 JMP32_JGT_K: all immediate value magnitudes jited:1 210100100 PASS
+[  422.072060] test_bpf: #935 JMP32_JGE_K: all immediate value magnitudes jited:1 165812600 PASS
+[  423.026190] test_bpf: #936 JMP32_JLT_K: all immediate value magnitudes jited:1 144610700 PASS
+[  423.911119] test_bpf: #937 JMP32_JLE_K: all immediate value magnitudes jited:1 144435700 PASS
+[  424.834927] test_bpf: #938 JMP32_JSGT_K: all immediate value magnitudes jited:1 175422600 PASS
+[  425.710294] test_bpf: #939 JMP32_JSGE_K: all immediate value magnitudes jited:1 138396300 PASS
+[  426.616334] test_bpf: #940 JMP32_JSLT_K: all immediate value magnitudes jited:1 128716200 PASS
+[  427.502812] test_bpf: #941 JMP32_JSLE_K: all immediate value magnitudes jited:1 136925000 PASS
+[  428.358161] test_bpf: #942 JMP32_JSET_X: all register value magnitudes jited:1 285239400 PASS
+[  430.743935] test_bpf: #943 JMP32_JEQ_X: all register value magnitudes jited:1 372613800 PASS
+[  433.150376] test_bpf: #944 JMP32_JNE_X: all register value magnitudes jited:1 216006700 PASS
+[  435.227079] test_bpf: #945 JMP32_JGT_X: all register value magnitudes jited:1 270190600 PASS
+[  437.466490] test_bpf: #946 JMP32_JGE_X: all register value magnitudes jited:1 355023200 PASS
+[  439.785133] test_bpf: #947 JMP32_JLT_X: all register value magnitudes jited:1 253655200 PASS
+[  442.061020] test_bpf: #948 JMP32_JLE_X: all register value magnitudes jited:1 243437400 PASS
+[  444.241797] test_bpf: #949 JMP32_JSGT_X: all register value magnitudes jited:1 237873800 PASS
+[  446.369440] test_bpf: #950 JMP32_JSGE_X: all register value magnitudes jited:1 255503100 PASS
+[  448.541982] test_bpf: #951 JMP32_JSLT_X: all register value magnitudes jited:1 229641400 PASS
+[  450.677822] test_bpf: #952 JMP32_JSLE_X: all register value magnitudes jited:1 220053600 PASS
+[  452.760091] test_bpf: #953 JMP_JSET_K: imm = 0 -> never taken jited:1 388 PASS
+[  453.132644] test_bpf: #954 JMP_JLT_K: imm = 0 -> never taken jited:1 292 PASS
+[  453.133844] test_bpf: #955 JMP_JGE_K: imm = 0 -> always taken jited:1 287 PASS
+[  453.134987] test_bpf: #956 JMP_JGT_K: imm = 0xffffffff -> never taken jited:1 298 PASS
+[  453.139843] test_bpf: #957 JMP_JLE_K: imm = 0xffffffff -> always taken jited:1 380 PASS
+[  453.144681] test_bpf: #958 JMP32_JSGT_K: imm = 0x7fffffff -> never taken jited:1 421 PASS
+[  453.146372] test_bpf: #959 JMP32_JSGE_K: imm = -0x80000000 -> always taken jited:1 297 PASS
+[  453.152260] test_bpf: #960 JMP32_JSLT_K: imm = -0x80000000 -> never taken jited:1 355 PASS
+[  453.157219] test_bpf: #961 JMP32_JSLE_K: imm = 0x7fffffff -> always taken jited:1 549 PASS
+[  453.158914] test_bpf: #962 JMP_JEQ_X: dst = src -> always taken jited:1 292 PASS
+[  453.165022] test_bpf: #963 JMP_JGE_X: dst = src -> always taken jited:1 327 PASS
+[  453.169362] test_bpf: #964 JMP_JLE_X: dst = src -> always taken jited:1 291 PASS
+[  453.170727] test_bpf: #965 JMP_JSGE_X: dst = src -> always taken jited:1 534 PASS
+[  453.175570] test_bpf: #966 JMP_JSLE_X: dst = src -> always taken jited:1 423 PASS
+[  453.183807] test_bpf: #967 JMP_JNE_X: dst = src -> never taken jited:1 356 PASS
+[  453.189382] test_bpf: #968 JMP_JGT_X: dst = src -> never taken jited:1 325 PASS
+[  453.190598] test_bpf: #969 JMP_JLT_X: dst = src -> never taken jited:1 454 PASS
+[  453.192684] test_bpf: #970 JMP_JSGT_X: dst = src -> never taken jited:1 543 PASS
+[  453.200011] test_bpf: #971 JMP_JSLT_X: dst = src -> never taken jited:1 322 PASS
+[  453.201248] test_bpf: #972 Short relative jump: offset=0 jited:1 299 PASS
+[  453.202416] test_bpf: #973 Short relative jump: offset=1 jited:1 299 PASS
+[  453.205249] test_bpf: #974 Short relative jump: offset=2 jited:1 341 PASS
+[  453.211841] test_bpf: #975 Short relative jump: offset=3 jited:1 591 PASS
+[  453.213436] test_bpf: #976 Short relative jump: offset=4 jited:1 305 PASS
+[  453.214853] test_bpf: #977 Long conditional jump: taken at runtime jited:1 420 PASS
+[  453.349013] test_bpf: #978 Long conditional jump: not taken at runtime jited:1 398 PASS
+[  453.479904] test_bpf: #979 Long conditional jump: always taken, known at JIT time jited:1 429 PASS
+[  453.612888] test_bpf: #980 Long conditional jump: never taken, known at JIT time jited:1 421 PASS
+[  453.747644] test_bpf: #981 Staggered jumps: JMP_JA jited:1 22121650 PASS
+[  454.220085] test_bpf: #982 Staggered jumps: JMP_JEQ_K jited:1 24289470 PASS
+[  454.804036] test_bpf: #983 Staggered jumps: JMP_JNE_K jited:1 26089290 PASS
+[  455.548298] test_bpf: #984 Staggered jumps: JMP_JSET_K jited:1 25320290 PASS
+[  456.284818] test_bpf: #985 Staggered jumps: JMP_JGT_K jited:1 36347360 PASS
+[  456.908174] test_bpf: #986 Staggered jumps: JMP_JGE_K jited:1 25319210 PASS
+[  457.987918] test_bpf: #987 Staggered jumps: JMP_JLT_K jited:1 42767160 PASS
+[  458.896153] test_bpf: #988 Staggered jumps: JMP_JLE_K jited:1 25941120 PASS
+[  459.616454] test_bpf: #989 Staggered jumps: JMP_JSGT_K jited:1 25015020 PASS
+[  460.120310] test_bpf: #990 Staggered jumps: JMP_JSGE_K jited:1 25337160 PASS
+[  461.171755] test_bpf: #991 Staggered jumps: JMP_JSLT_K jited:1 27350330 PASS
+[  461.695991] test_bpf: #992 Staggered jumps: JMP_JSLE_K jited:1 24444780 PASS
+[  462.780047] test_bpf: #993 Staggered jumps: JMP_JEQ_X jited:1 26357140 PASS
+[  463.295921] test_bpf: #994 Staggered jumps: JMP_JNE_X jited:1 23788040 PASS
+[  464.367967] test_bpf: #995 Staggered jumps: JMP_JSET_X jited:1 24681080 PASS
+[  465.092147] test_bpf: #996 Staggered jumps: JMP_JGT_X jited:1 55972030 PASS
+[  466.133240] test_bpf: #997 Staggered jumps: JMP_JGE_X jited:1 21989010 PASS
+[  466.840103] test_bpf: #998 Staggered jumps: JMP_JLT_X jited:1 22441020 PASS
+[  467.319943] test_bpf: #999 Staggered jumps: JMP_JLE_X jited:1 22273530 PASS
+[  468.360037] test_bpf: #1000 Staggered jumps: JMP_JSGT_X jited:1 22028270 PASS
+[  469.051946] test_bpf: #1001 Staggered jumps: JMP_JSGE_X jited:1 21814080 PASS
+[  469.738303] test_bpf: #1002 Staggered jumps: JMP_JSLT_X jited:1 22930440 PASS
+[  470.220252] test_bpf: #1003 Staggered jumps: JMP_JSLE_X jited:1 22107050 PASS
+[  471.275097] test_bpf: #1004 Staggered jumps: JMP32_JEQ_K jited:1 25192400 PASS
+[  471.807934] test_bpf: #1005 Staggered jumps: JMP32_JNE_K jited:1 24313280 PASS
+[  472.889350] test_bpf: #1006 Staggered jumps: JMP32_JSET_K jited:1 22598920 PASS
+[  473.351975] test_bpf: #1007 Staggered jumps: JMP32_JGT_K jited:1 25096050 PASS
+[  474.435325] test_bpf: #1008 Staggered jumps: JMP32_JGE_K jited:1 25562570 PASS
+[  474.976091] test_bpf: #1009 Staggered jumps: JMP32_JLT_K jited:1 25584250 PASS
+[  476.040546] test_bpf: #1010 Staggered jumps: JMP32_JLE_K jited:1 25335310 PASS
+[  476.576025] test_bpf: #1011 Staggered jumps: JMP32_JSGT_K jited:1 21680980 PASS
+[  477.605720] test_bpf: #1012 Staggered jumps: JMP32_JSGE_K jited:1 22107580 PASS
+[  478.100269] test_bpf: #1013 Staggered jumps: JMP32_JSLT_K jited:1 21618110 PASS
+[  479.119970] test_bpf: #1014 Staggered jumps: JMP32_JSLE_K jited:1 23012090 PASS
+[  479.632029] test_bpf: #1015 Staggered jumps: JMP32_JEQ_X jited:1 23245860 PASS
+[  480.689957] test_bpf: #1016 Staggered jumps: JMP32_JNE_X jited:1 24302490 PASS
+[  481.224180] test_bpf: #1017 Staggered jumps: JMP32_JSET_X jited:1 25977500 PASS
+[  482.310206] test_bpf: #1018 Staggered jumps: JMP32_JGT_X jited:1 40624200 PASS
+[  483.011996] test_bpf: #1019 Staggered jumps: JMP32_JGE_X jited:1 24339870 PASS
+[  484.074195] test_bpf: #1020 Staggered jumps: JMP32_JLT_X jited:1 24302270 PASS
+[  484.608082] test_bpf: #1021 Staggered jumps: JMP32_JLE_X jited:1 24572020 PASS
+[  485.671996] test_bpf: #1022 Staggered jumps: JMP32_JSGT_X jited:1 23455700 PASS
+[  486.156054] test_bpf: #1023 Staggered jumps: JMP32_JSGE_X jited:1 22993530 PASS
+[  487.196192] test_bpf: #1024 Staggered jumps: JMP32_JSLT_X jited:1 23653770 PASS
+[  487.688203] test_bpf: #1025 Staggered jumps: JMP32_JSLE_X jited:1 26858370 PASS

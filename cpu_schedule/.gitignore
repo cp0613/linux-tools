@@ -1,0 +1,4 @@
+sched_setaffinity
+sched_setaffinity_rv64
+sched_big.LITTLE
+sched_big.LITTLE_rv64

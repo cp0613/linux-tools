@@ -1,0 +1,6 @@
+syscall_perf_getpid
+syscall_perf_getpid_rv64
+syscall_perf_getpid_rv32
+syscall_mremap
+syscall_mremap_rv64
+syscall_mremap_rv32

@@ -1,0 +1,12 @@
+sysinfo03
+sysinfo03_rv64
+sysinfo03_rv32
+shmctl03
+shmctl03_rv64
+shmctl03_rv32
+semctl08
+semctl08_rv64
+semctl08_rv32
+gettimeofday02
+gettimeofday02_rv32
+gettimeofday02_rv64

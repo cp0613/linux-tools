@@ -1,0 +1,12 @@
+- py_strip_time.py：去除第一列的时间信息
+- py_sync_s32ilp32.py：把s32ilp32中多余的仅针对RV32的测试结果移除，同时处理`#`后的数字
+- py_diff_time.py：按#序号提取每行倒数第二列的时间，并比较
+- py_find_not_jited.py：输出没有被JIT执行的项目
+
+
+```
+# python3 py_strip_time.py
+# python3 py_sync_s32ilp32.py
+# python3 py_diff_time.py
+# python3 py_find_not_jited.py
+```

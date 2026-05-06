@@ -1,0 +1,1 @@
+- sched_setaffinity：设置CPU亲和性将进程绑定到特定的CPU核心
